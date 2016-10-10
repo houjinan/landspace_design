@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LandspaceDesign</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'banner_index', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body style="background: #000">
+    <div id="page-wrapper" >
+      <!-- Header -->
+      <div id="header-wrapper" class="wrapper">
+        <div id="header">
+          <div class="bannerbox">
+            <div class="nav">
+              <dl>
+                <dd class=""></dd>
+                <dd class=""></dd>
+                <dd class=""></dd>
+                <dd class=""></dd>
+                <dd class=""></dd>
+              </dl>
+            </div>
+            <ul>
+              <li class="fst-li">
+                <div class="containt-div">
+                   <div class="banner-text-a" id="banner-1-1">
+                    <%= t("home_header.banner-1-1") %>
+                   </div>
+                   <div class="banner-text-b" id="banner-1-2">
+                    <%= t("home_header.banner-1-2") %>
+                   </div>
+                </div>
+              </li>
+              <li class="sec-li">
+                <div class="containt-div">
+                  <div class="banner-text-a" id="banner-2-1">
+                    <%= t("home_header.banner-2-1") %>
+                   </div>
+                   <div class="banner-text-b" id="banner-2-2">
+                    <%= t("home_header.banner-2-2") %>
+                   </div>
+                </div>
+              </li>
+              <li class="third-li">
+                <div class="containt-div">
+                  <div class="banner-text-a" id="banner-3-1">
+                    <%= t("home_header.banner-3-1") %>
+                   </div>
+                   <div class="banner-text-b" id="banner-3-2">
+                    <%= t("home_header.banner-3-2") %>
+                   </div>
+                </div>
+              </li>
+              <li class="fourth-li">
+                <div class="containt-div">
+                  <div class="banner-text-a" id="banner-4-1">
+                    <%= t("home_header.banner-4-1") %>
+                   </div>
+                   <div class="banner-text-b" id="banner-4-2">
+                    <%= t("home_header.banner-4-2") %>
+                   </div>
+                </div>
+              </li>
+              <li class="fifth-li">
+                <div class="containt-div">
+                  <div class="banner-text-a" id="banner-5-1">
+                    <%= t("home_header.banner-5-1") %>
+                   </div>
+                   <div class="banner-text-b" id="banner-5-2">
+                    <%= t("home_header.banner-5-2") %>
+                   </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <%=render "shared/header" %>
+        </div>
+
+      </div>
+      <%= yield %>
+    </div>
+  </body>
+</html>
+<script>
+
+  window.onscroll=function(){
+    //变量t就是滚动条滚动时，到顶部的距离
+    var t =document.documentElement.scrollTop || document.body.scrollTop;
+    var header_nav = $("#header-nav");
+    var scroll_distance = $("#header-wrapper").height() - header_nav.height()
+    if(t >= scroll_distance && header_nav.css("position")=="static"){
+      header_nav.css("position", "fixed");
+      header_nav.css("margin-top", "0px");
+      header_nav.addClass("navbar-fixed-top");
+    }else if(t < scroll_distance && header_nav.css("position")=="fixed"){
+      header_nav.css("position", "static");
+      header_nav.css("margin-top", "-55px");
+      header_nav.removeClass("navbar-fixed-top");
+    }
+
+    t = t + 50
+    if(t >= $("#header-wrapper").height() + $("#about").height()+ $("#brand").height()+ $("#service").height()){
+      $("#nav_index").removeClass("active");
+      $("#nav_about").removeClass("active");
+      $("#nav_brand").removeClass("active");
+      $("#nav_service").removeClass("active");
+      $("#nav_contact").addClass("active");
+    }else if(t >= $("#header-wrapper").height() + $("#about").height()+ $("#brand").height()){
+      $("#nav_index").removeClass("active");
+      $("#nav_about").removeClass("active");
+      $("#nav_brand").removeClass("active");
+      $("#nav_service").addClass("active");
+      $("#nav_contact").removeClass("active");
+    }else if(t >= $("#header-wrapper").height() + $("#about").height()){
+      $("#nav_index").removeClass("active");
+      $("#nav_about").removeClass("active");
+      $("#nav_brand").addClass("active");
+      $("#nav_service").removeClass("active");
+      $("#nav_contact").removeClass("active");
+    }else if(t >= $("#header-wrapper").height()){
+      $("#nav_index").removeClass("active");
+      $("#nav_about").addClass("active");
+      $("#nav_brand").removeClass("active");
+      $("#nav_service").removeClass("active");
+      $("#nav_contact").removeClass("active");
+    }else{
+      $("#nav_index").addClass("active");
+      $("#nav_about").removeClass("active");
+      $("#nav_brand").removeClass("active");
+      $("#nav_service").removeClass("active");
+      $("#nav_contact").removeClass("active");
+    }
+  }
+
+
+  var width=$(".bannerbox").width();
+  var banner_index=-1;
+  var timer=0;
+  $(document).ready(function () {
+    move();
+    timer=setInterval("move()",5000);
+    $(".bannerbox ul li").hover(function(){
+      clearInterval(timer);
+    },function(){
+      timer=setInterval("move()",5000);
+    })
+    $('.nav dl dd').click(function(){
+      var ddIndex=$(this).index()-1;
+      banner_index=ddIndex;
+      move();
+    })
+  })
+  function move(){
+    for(i=0; i<$(".banner-text-a").length; i++){
+      $('#banner-'+(i+1)+'-1').css({"top":"100px",opacity:0});
+      $('#banner-'+(i+1)+'-2').css({"top":"400px",opacity:0});
+    }
+
+    banner_index ++;
+    if(banner_index>=5){
+      banner_index=0;
+    }
+    if(banner_index<5){
+      $('.nav dl dd').eq(banner_index).addClass('bg').siblings().removeClass('bg');
+      $('.bannerbox ul li').eq(banner_index).fadeIn(1000).siblings().fadeOut();
+      $('#banner-'+(banner_index+1)+'-1').animate({"top":"350px",opacity:1},2000,function(){
+          $('#banner-'+(banner_index+1)+'-2').animate({"top":"500px",opacity:1},2000)
+      });
+    }
+  }
+
+</script>

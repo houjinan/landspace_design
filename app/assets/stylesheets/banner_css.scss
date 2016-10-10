@@ -1,0 +1,98 @@
+/* CSS Document */
+@charset "UTF-8";
+.bannerbox{
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.containt-div{
+  position: relative;
+}
+.bannerbox ul{
+  position: relative;
+}
+.bannerbox ul li{
+  list-style: none;
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.bannerbox ul li.fst-li{
+  background: url("01.jpg") center no-repeat;
+  background-size: cover;
+}
+.bannerbox ul li.sec-li{
+  background: url("02.jpg") center no-repeat;
+  background-size: cover;
+}
+.bannerbox ul li.third-li{
+  background: url("03.jpg") center no-repeat;
+  background-size: cover;
+}
+.bannerbox ul li.fourth-li{
+  background: url("04.jpg") center no-repeat;
+  background-size: cover;
+}
+.bannerbox ul li.fifth-li{
+  background: url("05.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.bannerbox ul li .img1{
+  position: absolute;
+}
+/*banner-01*/
+.banner-text-a{
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 200px;
+  filter:alpha(opacity=0);
+  -moz-opacity:0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  font-size: 45px;
+  letter-spacing: 2px;
+  line-height: 105px;
+  padding-top: 45px;
+  font-weight: lighter;
+  font-family: "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+.banner-text-b{
+  color: #fff;
+  text-align: center;
+  top: 350px;
+  left: 50%;
+  position: absolute;
+  filter:alpha(opacity=0);
+  -moz-opacity:0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  font-size: 22px;
+}
+
+.nav{
+  position:absolute;
+  bottom:80px;
+  z-index: 2;
+  left: 50%;
+  margin-left: -30px}
+.nav dl dd{
+  list-style-type:none;
+  width:12px;
+  height:12px;
+  float:left;
+  margin-right:5px;
+  cursor:pointer;
+  border:1px solid #fff;
+ -webkit-border-radius: 20px;
+}
+.nav dl .bg{
+  background:#fff;
+  width:14px;
+  height:14px;
+  border:none;
+}

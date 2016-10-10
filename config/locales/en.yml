@@ -1,0 +1,22 @@
+en:
+  hello: "Hello world"
+
+  home_header:
+    banner-1-1: "LAND SPACE DESIGN CHINA"
+    banner-1-2: "LAND SPACE DESIGN CHINA"
+    banner-2-1: "CHINA'S NEW SPACE ECOSYSTEM"
+    banner-2-2: "CHINA'S NEW SPACE ECOSYSTEM"
+    banner-3-1: "DESIGN TO DEFINE LIFE"
+    banner-3-2: "DESIGN TO DEFINE LIFE"
+    banner-4-1: "International Custom of Soft Outfit"
+    banner-4-2: "International Custom of Soft Outfit"
+    banner-5-1: "Renovation Plan of China’s Rural Home"
+    banner-5-2: "Renovation Plan of China’s Rural Home"
+
+  nav:
+    index: "Home"
+    about: "About"
+    brand: "Brand"
+    service: "Service"
+    contact: "Contact"
+    language: "中文"

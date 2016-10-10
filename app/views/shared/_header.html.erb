@@ -1,0 +1,36 @@
+<div id="logo" style="display: none">
+  <h1><a href="/site">Landspace Design</a></h1>
+</div>
+<div class="container-full header-nav" id="header-nav">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-3 col-xs-3">
+        <!-- Logo -->
+        <div id="nav-logo">
+          <a href="/site">
+            <img src="<%=image_path('logo.png') %>">
+            <span>Landspace Design</span>
+          <a href="/site">
+        </div>
+      </div>
+      <div class="col-lg-9 col-sm-9 col-xs-9">
+        <nav id="nav" class="pull-right">
+          <ul>
+            <li id="nav_index" class="active">
+              <a href="/site#header-wrapper"><%=t("nav.index")%></a>
+            </li>
+            <li id="nav_about" ><a href="/site#about"><%=t("nav.about")%></a></li>
+            <li id="nav_brand" ><a href="/site#brand"><%=t("nav.brand")%></a></li>
+            <li id="nav_service" ><a href="/site#service"><%=t("nav.service")%></a></li>
+            <li id="nav_contact" ><a href="/site#contact"><%=t("nav.contact")%></a></li>
+            <% if I18n.locale == "en" %>
+              <li><a href="/site?locale=zh-CN"><%=t("nav.language")%></a></li>
+            <% else %>
+              <li><a href="/site?locale=en"><%=t("nav.language")%></a></li>
+            <% end %>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

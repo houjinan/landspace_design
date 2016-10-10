@@ -1,0 +1,60 @@
+<script>
+  if(window.localStorage.lang != undefined && window.localStorage.lang == "en"){
+    // location.href = "/home/mobile";
+  }else if(window.localStorage.lang != undefined && window.localStorage.lang == "zh"){
+    // location.href = "/home/mobile";
+  }else {
+
+  }
+</script>
+<div>
+  <div class="introduction"></div>
+  <div class="which-lang">
+    <a href="javascript: window.localStorage.lang = 'en'; location.href='/site?locale=en';" class="language-link btn-lang en" xml:lang="en"></a>
+    <a href="javascript: window.localStorage.lang = 'zh'; location.href='/site?locale=zh-CN';" class="language-link btn-lang zh" xml:lang="zh-hans"></a>
+  </div>
+
+</div>
+
+<style>
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body {
+    background: url('assets/bg.png') no-repeat center center / cover;
+  }
+  .which-lang {
+    position: absolute;
+    width: 100%;
+    bottom: 64px;
+    left: 0;
+    text-align: center;
+  }
+
+  .btn-lang {
+    display: inline-block;
+    width: 228px;
+    height: 43px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    background: url('<%=image_path("btn_home.png")%>') no-repeat 0 0;
+  }
+  .en:hover {
+    background-position: 0 -145px;
+  }
+  .zh {
+    background-position: 0 -47px;
+  }
+
+  .zh:hover {
+    background-position: 0 -192px;
+  }
+
+  #header-nav {
+    /*display: none;*/
+  }
+</style>
