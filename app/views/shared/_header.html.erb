@@ -23,10 +23,10 @@
             <li id="nav_brand" ><a href="/site#brand"><%=t("nav.brand")%></a></li>
             <li id="nav_service" ><a href="/site#service"><%=t("nav.service")%></a></li>
             <li id="nav_contact" ><a href="/site#contact"><%=t("nav.contact")%></a></li>
-            <% if I18n.locale == "en" %>
-              <li><a href="/site?locale=zh-CN"><%=t("nav.language")%></a></li>
+            <% if I18n.locale.to_s == "en" %>
+              <li><a href="<%=params[:action]%>?locale=zh-CN"><%=t("nav.language")%></a></li>
             <% else %>
-              <li><a href="/site?locale=en"><%=t("nav.language")%></a></li>
+              <li><a href="<%=params[:action]%>?locale=en"><%=t("nav.language")%></a></li>
             <% end %>
           </ul>
         </nav>
