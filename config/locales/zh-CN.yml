@@ -1,4 +1,5 @@
 zh-CN:
+
   home_header:
     banner-1-1: "LAND SPACE DESIGN CHINA"
     banner-1-2: "陆地空间设计 | 中国"
@@ -18,3 +19,22 @@ zh-CN:
     service: "服务"
     contact: "联系"
     language: "English"
+
+  site:
+    company-introduce: "陆地（上海）空间设计有限公司 原 LANDDESIGN STUDIO 中国总部位于上海，专注于软装国际定制。陆地中国跨境定制平台实现了意大利等欧洲知名家居定制厂商与中国大陆的直线对接，依托专业的设计团队，提供高品质全系统整体软装定制服务。16年成立公司创立“宿造”品牌，服务于中国乡村民宿建设。 LANDSPACE以人、自然与生活为主题，致力于打造中国新型空间生态系统。"
+    representative: "代表作"
+    about_us: "关于我们"
+    brand: "品牌"
+    service: "服务"
+    contact: "联系"
+    space_design: "空间设计"
+    space_design_desc: "陆地空间设计以人、自然与生活为主题，致力于打造新型空间设计生态系统。"
+    renovation_of_home_stay: "民宿改造"
+    renovation_of_home_stay_desc: "“宿造”是陆地空间设计的子品牌，专注于中国乡村民宿改造工程。"
+    overall_soft_outfit: "整体软装"
+    overall_soft_outfit_desc: "以饰言美学，诠释生活真谛。不庸俗于奢华，不造作于低廉。"
+
+    company_name: "陆地(上海)空间设计有限公司"
+    address: "地址"
+    company_address: "中国 上海 黄浦区中山东二路88号（外滩SOHO f 栋）"
+    contact_phone: "联系电话"

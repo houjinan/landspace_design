@@ -4,12 +4,12 @@
       <div class="row" style="text-align: center">
         <div>
           <span class="title-bar"></span>
-          <h4>关于我们</h4>
+          <h4><%=t("site.about_us")%></h4>
         </div>
       </div>
       <div class="row">
         <span class="col-lg-12 col-sm-12 col-xs-12 introduce">
-          陆地（上海）空间设计有限公司 原 LANDDESIGN STUDIO 中国总部位于上海，专注于软装国际定制。陆地中国跨境定制平台实现了意大利等欧洲知名家居定制厂商与中国大陆的直线对接，依托专业的设计团队，提供高品质全系统整体软装定制服务。16年成立公司创立“宿造”品牌，服务于中国乡村民宿建设。 LANDSPACE以人、自然与生活为主题，致力于打造中国新型空间生态系统。</span>
+          <%=t("site.company-introduce")%></span>
       </div>
       <div class="row team">
         <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><%=image_tag("victor1.jpg", onclick: "click_person(1)")%></div>
@@ -26,7 +26,7 @@
             <span>万翼</span>
           </div>
           <div class="col-lg-6 col-sm-6 col-xs-4 ">
-            <div class="pull-right"><a href="#">代表作</a></div>
+            <div class="pull-right"><a href="#"><%=t("site.representative")%></a></div>
           </div>
           <div class="col-lg-12 col-sm-12 col-xs-12">
             <p>
@@ -43,7 +43,7 @@
             <span>ARCH. ALESSANDRO RUDELLAT</span>
           </div>
           <div class="col-lg-6 col-sm-6 col-xs-4 ">
-            <div class="pull-right"><a href="#">代表作</a></div>
+            <div class="pull-right"><a href="#"><%=t("site.representative")%></a></div>
           </div>
           <div class="col-lg-12 col-sm-12 col-xs-12">
             <p>
@@ -58,7 +58,7 @@
             <span>IRENE</span>
           </div>
           <div class="col-lg-6 col-sm-6 col-xs-4 ">
-            <div class="pull-right"><a href="#">代表作</a></div>
+            <div class="pull-right"><a href="#"><%=t("site.representative")%></a></div>
           </div>
           <div class="col-lg-12 col-sm-12 col-xs-12">
             <p>
@@ -73,7 +73,7 @@
             <span>俞楚宁</span>
           </div>
           <div class="col-lg-6 col-sm-6 col-xs-4 ">
-            <div class="pull-right"><a href="#">代表作</a></div>
+            <div class="pull-right"><a href="#"><%=t("site.representative")%></a></div>
           </div>
           <div class="col-lg-12 col-sm-12 col-xs-12">
             <p>
@@ -88,7 +88,7 @@
             <span>闻玉流</span>
           </div>
           <div class="col-lg-6 col-sm-6 col-xs-4 ">
-            <div class="pull-right"><a href="#">代表作</a></div>
+            <div class="pull-right"><a href="#"><%=t("site.representative")%></a></div>
           </div>
           <div class="col-lg-12 col-sm-12 col-xs-12">
             <p>
@@ -103,7 +103,7 @@
             <span>MARC HARRIS</span>
           </div>
           <div class="col-lg-6 col-sm-6 col-xs-4 ">
-            <div class="pull-right"><a href="#">代表作</a></div>
+            <div class="pull-right"><a href="#"><%=t("site.representative")%></a></div>
           </div>
           <div class="col-lg-12 col-sm-12 col-xs-12">
             <p>
@@ -119,44 +119,44 @@
       <div class="row" style="text-align: center">
         <div>
           <span class="title-bar"></span>
-          <h4>品牌</h4>
+          <h4><%=t("site.brand")%></h4>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-4 col-sm-6 col-xs-12">
           <div class="brand-item" id="space_design" onmouseover="brand_mouseover('space_design')" onmouseout="brand_mouseout('space_design')">
             <div class="tile">
-              <h2>空间设计</h2>
+              <h2><%=t("site.space_design")%></h2>
               <div class="symbol">
                 <%=image_tag("process_mag.svg")%>
               </div>
             </div>
-            <h5>空间设计 —</h5>
-            <p>陆地空间设计以人、自然与生活为主题，致力于打造新型空间设计生态系统。</p>
+            <h5><%=t("site.space_design")%> —</h5>
+            <p><%=t("site.space_design_desc")%></p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 col-xs-12">
           <div class="brand-item" id="transform" onmouseover="brand_mouseover('transform')" onmouseout="brand_mouseout('transform')">
             <div class="tile">
-              <h2>民宿改造</h2>
+              <h2><%= t("site.renovation_of_home_stay")%></h2>
               <div class="symbol">
                 <%=image_tag("process_ruler.svg")%>
               </div>
             </div>
-            <h5>民宿改造 —</h5>
-            <p>“宿造”是陆地空间设计的子品牌，专注于中国乡村民宿改造工程。      </p>
+            <h5><%= t("site.renovation_of_home_stay")%> —</h5>
+            <p><%= t("site.renovation_of_home_stay_desc")%></p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 col-xs-12">
           <div class="brand-item" id="ensemble" onmouseover="brand_mouseover('ensemble')" onmouseout="brand_mouseout('ensemble')">
             <div class="tile">
-              <h2>整体软装</h2>
+              <h2><%=t("site.overall_soft_outfit")%></h2>
               <div class="symbol">
                 <%=image_tag("process_tools.svg")%>
               </div>
             </div>
-            <h5>整体软装 —</h5>
-            <p>以饰言美学，诠释生活真谛。不庸俗于奢华，不造作于低廉。</p>
+            <h5><%=t("site.overall_soft_outfit")%> —</h5>
+            <p><%=t("site.overall_soft_outfit_desc")%></p>
           </div>
         </div>
       </div>
@@ -167,7 +167,7 @@
       <div class="row" style="text-align: center">
         <div>
           <span class="title-bar"></span>
-          <h4>服务</h4>
+          <h4><%=t("site.service")%></h4>
         </div>
       </div>
       <div class="row">
@@ -262,21 +262,21 @@
       <div class="row" style="text-align: center">
         <div>
           <span class="title-bar"></span>
-          <h4>联系</h4>
+          <h4><%=t("site.contact")%></h4>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-4 col-sm-4 col-xs-12">
-          <h3>陆地(上海)空间设计有限公司</h3>
+          <h3><%= t("site.company_name")%></h3>
         </div>
         <div class="col-lg-4 col-sm-4 col-xs-12">
-          <h3>地址 —</h3>
-          <p>中国 上海 黄浦区中山东二路88号（外滩SOHO f 栋）</p>
+          <h3><%= t("site.address")%> —</h3>
+          <p><%= t("site.company_address")%></p>
 
           <a style="color:#993300" href="http://j.map.baidu.com/IdfuB" target="_blank">Get Directions</a>
         </div>
         <div class="col-lg-4 col-sm-4 col-xs-12">
-          <h3>联系电话 —</h3>
+          <h3><%=t("site.contact_phone")%> —</h3>
           <p>P <span style="color:#993300"> 400-696-1930</span></p>
           <p>E <a href="mailto:landspace@landspace.com.cn" style="color:#993300">landspace@landspace.com.cn</a></p>
         </div>
