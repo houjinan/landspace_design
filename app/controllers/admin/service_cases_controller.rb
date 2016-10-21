@@ -26,7 +26,7 @@ module Admin
     # POST /admin/service_cases.json
     def create
       @service_case = ServiceCase.new(service_case_params)
-
+      binding.pry
       respond_to do |format|
         if @service_case.save
           format.html { redirect_to @service_case, notice: 'Service case was successfully created.' }
