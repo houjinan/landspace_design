@@ -1,0 +1,25 @@
+- url = @service_case.new_record? ? admin_service_cases_path : admin_service_case_path(@service_case)
+= form_for(@service_case, url: url, html:{class: "horizontal_form"}) do |f|
+  - if @service_case.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@service_case.errors.count, "error")} prohibited this service_case from being saved:"
+      ul
+        - @service_case.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :service_type
+    = f.text_field :service_type
+  .field
+    = f.label :title_en
+    = f.text_field :title_en
+  .field
+    = f.label :title_zh
+    = f.text_field :title_zh
+  .field
+    = f.label :description_en
+    = f.text_area :description_en
+  .field
+    = f.label :description_zh
+    = f.text_area :description_zh
+  .actions = f.submit

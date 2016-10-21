@@ -1,0 +1,24 @@
+h1 服务案例
+
+table.table.table-bordered.table-hover.table-striped
+  thead
+    tr
+      th 服务类型
+      th 标题
+      th 简介
+      th
+
+  tbody
+    - @service_cases.each do |service_case|
+      tr
+        td = service_case.service_type
+        td = service_case.title_zh
+        td = service_case.description_zh
+        td
+          = link_to 'Show', admin_service_case_path(service_case)
+          = link_to 'Edit', edit_admin_service_case_path(service_case)
+          = link_to 'Destroy', admin_service_case_path(service_case), data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to '创建服务案例', new_admin_service_case_path

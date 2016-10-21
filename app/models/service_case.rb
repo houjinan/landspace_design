@@ -1,0 +1,2 @@
+class ServiceCase < ApplicationRecord
+end

@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong Service type:
+  = @service_case.service_type
+p
+  strong Title en:
+  = @service_case.title_en
+p
+  strong Title zh:
+  = @service_case.title_zh
+p
+  strong Description en:
+  = @service_case.description_en
+p
+  strong Description zh:
+  = @service_case.description_zh
+
+= link_to 'Edit', edit_admin_service_case_path(@service_case)
+'|
+= link_to 'Back', admin_service_cases_path
