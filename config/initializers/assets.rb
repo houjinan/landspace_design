@@ -9,4 +9,4 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( gallery/gallery.js )
-Rails.application.config.assets.precompile += %w( banner_index.js )
+Rails.application.config.assets.precompile += %w( banner_index.js login_layout.js login_layout.scss admin_layout.js admin_layout.scss )

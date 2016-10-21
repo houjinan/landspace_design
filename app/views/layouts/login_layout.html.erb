@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LandspaceDesign Login</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'login_layout', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'login_layout', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
+
+<style>
+  html{overflow-y:hidden;}
+  body{margin:0;height:100%;}
+</style>

@@ -30,3 +30,6 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
+gem 'unicorn', '~> 4.9.0'
+gem 'devise'
