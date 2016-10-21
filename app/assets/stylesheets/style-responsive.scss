@@ -353,6 +353,74 @@
     margin-bottom: 0;
   }
 
+  /* Index */
+  .bg-wapper {
+    width: 100%;
+    height: 100%;
+    background: url('bg.png') no-repeat center center / cover;
+  }
+
+  .content-wapper {
+    position:fixed;
+    left:0;
+    right:0;
+    top:30%;
+    bottom:0;
+    margin:auto;
+  }
+
+  .which-lang {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-lang {
+    display: inline-block;
+    width: 170px;
+    height: 43px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .en {
+    background: url('btn_en.png') no-repeat 0 0;
+  }
+
+  .en:hover {
+  }
+
+  .zh {
+    background: url('btn_zh.png') no-repeat 0 0;
+  }
+
+  .zh:hover {
+  }
+
+  .introduction {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .introduction hr {
+    margin: auto;
+    width: 99px;
+    height: 10px;
+    background: #ffffff;
+  }
+
+  .introduction .remark {
+    margin-top: 40px;
+    font-style: "PingFangSC-Medium";
+    font-size: 45px;
+    color: #fff;
+  }
+
+  .introduction .title {
+    font-style: "Arial-Black";
+    font-size: 50px;
+    color: #fff;
+  }
+
 }
 
 /* Tablet Only */
@@ -804,4 +872,73 @@
       font-size: 12px;
   }
 
+
+  /* Index */
+  .bg-wapper {
+    width: 100%;
+    height: 100%;
+    background: url('bg_mobile.png') no-repeat center center / cover;
+  }
+
+  .content-wapper {
+    position:fixed;
+    left:0;
+    right:0;
+    top:40%;
+    bottom:0;
+    margin:auto;
+  }
+
+  .which-lang {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-lang {
+    display: inline-block;
+    width: 170px;
+    height: 43px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top:10px;
+  }
+
+  .en {
+    background: url('btn_en.png') no-repeat 0 0;
+  }
+
+  .en:hover {
+  }
+
+  .zh {
+    background: url('btn_zh.png') no-repeat 0 0;
+  }
+
+  .zh:hover {
+  }
+
+  .introduction {
+    text-align: center;
+    margin-bottom: 116px;
+  }
+
+  .introduction hr {
+    margin: auto;
+    width: 99px;
+    height: 5px;
+    background: #ffffff;
+  }
+
+  .introduction .remark {
+    margin-top: 40px;
+    font-style: "PingFangSC-Medium";
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .introduction .title {
+    font-style: "Arial-Black";
+    font-size: 20px;
+    color: #fff;
+  }
 }
