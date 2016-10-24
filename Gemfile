@@ -33,3 +33,4 @@ end
 
 gem 'unicorn', '~> 4.9.0'
 gem 'devise'
+gem 'carrierwave'

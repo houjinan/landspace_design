@@ -16,6 +16,4 @@ p
   strong Description zh:
   = @service_case.description_zh
 
-= link_to 'Edit', edit_admin_service_case_path(@service_case)
-'|
-= link_to 'Back', admin_service_cases_path
+= render 'attachments/attachments_list', attachments: @service_case.attachments

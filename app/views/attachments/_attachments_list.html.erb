@@ -1,0 +1,17 @@
+<div class="upload_preview">
+  <% attachments.each do |attachment| %>
+    <div class="upload_append_list">
+      <div class="file_bar">
+        <div style="padding:5px;">
+          <p class="file_name"><%="#{attachment.avatar.url}"%></p>
+          <span class="file_del attachment_remove_btn" data-index="0" title="删除"></span>
+        </div>
+      </div>
+      <a style="height:100px;width:120px;" href="#" class="imgBox">
+        <div class="uploadImg" style="width:105px">
+          <%= image_tag("#{attachment.avatar.url}", class: "upload_image") %>
+        </div>
+      </a>
+    </div>
+  <% end %>
+</div>

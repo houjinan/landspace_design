@@ -1,0 +1,45 @@
+<div class="upload_preview">
+  <% attachment_method = f.object.respond_to?(:attachments) ? :attachments : :attachment %>
+  <%= f.fields_for attachment_method do |attachment_f| %>
+    <% attachment = attachment_f.object %>
+    <div class="upload_append_list">
+      <div class="file_bar">
+        <div style="padding:5px;">
+          <p class="file_name"><%="#{attachment.avatar.url}"%></p>
+          <span class="file_del attachment_remove_btn" data-index="0" title="删除"></span>
+        </div>
+      </div>
+      <a style="height:100px;width:120px;" href="#" class="imgBox">
+        <div class="uploadImg" style="width:105px">
+          <%= image_tag("#{attachment.avatar.url}", class: "upload_image") %>
+        </div>
+      </a>
+      <% if attachment.id %>
+        <%= attachment_f.hidden_field :_destroy, class: 'destroy_field' %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+
+
+<script type="text/javascript">
+$(function(){
+
+  $(".upload_preview").on('click', '.attachment_remove_btn', function(){
+    $(this).parents(".upload_append_list").find(".destroy_field").val("1");
+    $(this).parents(".upload_append_list").find(".upload_fields").remove();
+    $(this).parents(".upload_append_list").hide();
+  });
+});
+
+
+$(function(){
+  $(".upload_append_list").hover(
+    function (e) {
+      $(this).find(".file_bar").addClass("file_hover");
+    },function (e) {
+      $(this).find(".file_bar").removeClass("file_hover");
+    }
+  );
+});
+</script>

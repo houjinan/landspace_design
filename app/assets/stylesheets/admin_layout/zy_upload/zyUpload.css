@@ -267,6 +267,7 @@ pre{font-family:'simsun';}
 	border:none;
 	max-width: 100%!important;
 	height: auto!important;
+  max-height: 98px;
 }
 
 /* 不带有拖拽的样式 */

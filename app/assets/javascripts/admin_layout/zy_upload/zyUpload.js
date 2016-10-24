@@ -68,7 +68,7 @@
 		            html += '				<div id="status_info" class="info">选中0张文件，共0B。</div>';
 		            html += '				<div class="btns">';
 		            html += '					<div class="webuploader_pick">继续选择</div>';
-		            html += '					<div class="upload_btn">开始上传</div>';
+		            html += '					<div class="upload_btn" style="display: none;">开始上传</div>';
 		            html += '				</div>';
 		            html += '			</div>';
 					html += '			<div id="preview" class="upload_preview"></div>';
@@ -91,14 +91,14 @@
 		            html += '				<div class="btns">';
 		            html += '					<input id="fileImage" type="file" size="30" name="fileselect[]" '+multiple+'>';
 		            html += '					<div class="webuploader_pick">选择文件</div>';
-		            html += '					<div class="upload_btn">开始上传</div>';
+		            html += '					<div class="upload_btn" style="display: none;">开始上传</div>';
 		            html += '				</div>';
 		            html += '			</div>';
 		            html += '			<div id="preview" class="upload_preview">';
 				    html += '				<div class="add_upload">';
 				    html += '					<a style="height:'+para.itemHeight+';width:'+para.itemWidth+';" title="点击添加文件" id="rapidAddImg" class="add_imgBox" href="javascript:void(0)">';
 				    html += '						<div class="uploadImg" style="width:'+imgWidth+'px">';
-				    html += '							<img class="upload_image" src="control/images/add_img.png" style="width:expression(this.width > '+imgWidth+' ? '+imgWidth+'px : this.width)" />';
+				    html += '							<img class="upload_image" src="/assets/zy_upload/add_img.png" style="width:expression(this.width > '+imgWidth+' ? '+imgWidth+'px : this.width)" />';
 				    html += '						</div>';
 				    html += '					</a>';
 				    html += '				</div>';
@@ -253,7 +253,8 @@
 						var funDealtPreviewHtml = function() {
 							file = selectFiles[i];
 							if (file) {
-								var reader = new FileReader()
+								console.log(file.index);
+								var reader = new FileReader();
 								reader.onload = function(e) {
 									// 处理下配置参数和格式的html
 									html += self.funDisposePreviewHtml(file, e);
