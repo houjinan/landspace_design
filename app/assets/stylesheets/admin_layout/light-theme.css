@@ -3329,9 +3329,7 @@ body.forgot-password #wrapper .controls .form-wrapper button {
     font-family: Montserrat;
     font-size: 20px;
     position: relative;
-    -webkit-border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    border-radius: 0 !important; }
+    ant; }
     .fuelux .wizard ul li.active {
       background-color: #f34541;
       color: white; }
@@ -3765,9 +3763,7 @@ a, a:hover, .btn-link, .btn-link:hover {
   filter: none !important; }
 
 .btn {
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
-  border-radius: 0 !important; }
+   }
 
 .table-bordered tbody:last-child tr:last-child > th:last-child, .table-bordered tfoot:last-child tr:last-child > td:last-child,
 .table-bordered tfoot:last-child tr:last-child > th:last-child,
@@ -3780,35 +3776,25 @@ a, a:hover, .btn-link, .btn-link:hover {
 .table-bordered thead:first-child tr:first-child > th:first-child, .table-bordered tbody:first-child tr:first-child > td:first-child,
 .table-bordered tbody:first-child tr:first-child > th:first-child,
 .table, .table-bordered thead:last-child tr:last-child > th:last-child, .table-bordered tbody:last-child tr:last-child > td:last-child {
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
-  border-radius: 0 !important; }
+   }
 
 .input-append .add-on:last-child, .input-append .btn:last-child, .input-append .btn-group:last-child > .dropdown-toggle,
 .input-prepend.input-append .add-on:last-child, .input-prepend.input-append .btn:last-child,
 .input-prepend.input-append .add-on:first-child, .input-prepend.input-append .btn:first-child, .input-prepend .add-on:first-child, .input-prepend .btn:first-child {
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
-  border-radius: 0 !important; }
+   }
 
 .pager li > a, .pager li > span, .pagination ul > li:first-child > a, .pagination ul > li:first-child > span,
 .pagination-large ul > li:last-child > a, .pagination-large ul > li:last-child > span,
 .pagination-large ul > li:first-child > a, .pagination-large ul > li:first-child > span, .pagination ul > li:last-child > a, .pagination ul > li:last-child > span {
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
-  border-radius: 0 !important; }
+   }
 
 .btn, .btn-group > .btn:first-child, .btn-group > .btn:last-child, .btn-group > .dropdown-toggle {
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
-  border-radius: 0 !important; }
+   }
 
 .well, .nav-pills > li > a, .navbar-inner, .breadcrumb, .nav-tabs > li > a, .tabs-left > .nav-tabs > li > a, .tabs-right > .nav-tabs > li > a, .tabs-left > .nav-tabs > li > a, .accordion-group,
 input[type="text"], input[type="password"], .ui-autocomplete-input, textarea, .uneditable-input, .modal, .tooltip .tooltip-inner,
 .popover, .popover-title, .progress, .alert, .label, .thumbnail, .dropdown-menu {
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
-  border-radius: 0 !important; }
+   }
 
 .select2-dropdown-open .select2-choice {
   -webkit-box-shadow: none;
@@ -3835,9 +3821,7 @@ div.jGrowl div.jGrowl-notification, div.jGrowl div.jGrowl-closer {
   color: white;
   opacity: 1;
   filter: alpha(opacity=100);
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
-  border-radius: 0 !important; }
+   }
 
 .jGrowl-notification.ui-state-highlight {
   background: #222222;
@@ -3845,9 +3829,7 @@ div.jGrowl div.jGrowl-notification, div.jGrowl div.jGrowl-closer {
   color: white;
   opacity: 1;
   filter: alpha(opacity=100);
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
-  border-radius: 0 !important; }
+   }
 
 .daterangepicker .ranges li.active, .daterangepicker .ranges li:hover {
   color: white;
@@ -4009,9 +3991,7 @@ div.jGrowl div.jGrowl-notification, div.jGrowl div.jGrowl-closer {
     color: #fff; }
 
 .slimScrollBar {
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
-  border-radius: 0 !important; }
+   }
 
 .slider-content ul ul li a:hover {
   background: #f4f4f4; }
@@ -5785,3 +5765,6 @@ div.jGrowl div.jGrowl-notification, div.jGrowl div.jGrowl-closer {
   color: #924e31; }
 .contrast-brown .dd-placeholder {
   border-color: #924e31; }
+.form-control {
+  padding: 0px;
+}
