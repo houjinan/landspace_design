@@ -27,7 +27,7 @@ $(document).ready(function() {
     <%= f.email_field :email, autofocus: true, placeholder: "账号", class: "login_txtbx"  %>
    </dd>
    <dd class="pwd_icon">
-    <%= f.password_field :password, autocomplete: "off", placeholder: "密码", class: "login_txtbx" %>
+    <%= f.password_field :password, autocomplete: "off", placeholder: "密码", class: "login_txtbx #{flash[:alert].present? ? 'login_txtbx_error': ''}", value: "#{params[:user].present? ? params[:user][:password].to_s : ''}" %>
    </dd>
    <dd class="val_icon">
     <div class="checkcode">
