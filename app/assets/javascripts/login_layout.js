@@ -49,10 +49,28 @@ function validate () {
       return false;
     }
     else {
-      window.open(document.getElementById("J_down").getAttribute("data-link"));
-      document.getElementById("J_codetext").value="";
-      createCode();
+      // document.getElementById("J_codetext").value="";
+      // createCode();
       return true;
     }
+
+}
+
+function validate_login(){
+  if($("#user_email").val() == ""){
+    document.getElementById("user_email").setAttribute("placeholder","输入用户邮箱");
+    return false;
+  }
+
+  if($("#user_password").val() == ""){
+    document.getElementById("user_password").setAttribute("placeholder","输入用户密码");
+    return false;
+  }
+
+  if(validate()){
+    return true;
+  }else{
+    return false;
+  }
 
 }

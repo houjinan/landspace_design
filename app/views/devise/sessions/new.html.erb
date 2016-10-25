@@ -20,7 +20,7 @@ $(document).ready(function() {
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <dl class="admin_login">
    <dt>
-    <strong>站点后台管理系统</strong>
+    <strong>陆地空间.后台管理系统</strong>
     <em>Management System</em>
    </dt>
    <dd class="user_icon">
@@ -37,7 +37,7 @@ $(document).ready(function() {
     <input type="button" value="验证码核验" class="ver_btn" onClick="validate();">
    </dd>
    <dd>
-    <input type="submit" value="立即登陆" class="submit_btn"/>
+    <input type="submit" value="立即登陆" class="submit_btn" onClick="return validate_login();"/>
    </dd>
 
   </dl>
