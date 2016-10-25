@@ -24,5 +24,4 @@ table.table.table-bordered.table-hover.table-striped
           = link_to '删除', admin_service_case_path(service_case), data: { confirm: 'Are you sure?' }, method: :delete, class: "btn btn-small btn-danger"
 
 br
-
-= link_to '创建服务案例', new_admin_service_case_path, class: "btn btn-small btn-success"
+.pull-right = will_paginate @service_cases

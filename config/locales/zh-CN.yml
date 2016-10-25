@@ -1,5 +1,9 @@
 zh-CN:
 
+  will_paginate:
+    previous_label: "前一页"
+    next_label: "后一页"
+
   home_header:
     banner-1-1: "LAND SPACE DESIGN CHINA"
     banner-1-2: "陆地空间设计 | 中国"

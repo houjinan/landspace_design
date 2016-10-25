@@ -3,7 +3,7 @@ module Admin
     before_action :set_service_case, only: [:show, :edit, :update, :destroy]
 
     def index
-      @service_cases = ServiceCase.all
+      @service_cases = ServiceCase.all.paginate(:per_page => 20, :page => params[:page])
     end
 
     def show

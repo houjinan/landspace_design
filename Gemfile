@@ -34,3 +34,5 @@ end
 gem 'unicorn', '~> 4.9.0'
 gem 'devise'
 gem 'carrierwave'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
