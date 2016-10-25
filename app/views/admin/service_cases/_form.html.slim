@@ -11,10 +11,10 @@
     = f.text_field :title_zh, class: "form-control"
   .form-group
     = f.label :description_en, "简介_中文"
-    = f.text_area :description_en, class: "form-control"
+    = f.text_area :description_en, class: "form-control", rows: 5
   .form-group
     = f.label :description_zh, "简介_英文"
-    = f.text_area :description_zh, class: "form-control"
+    = f.text_area :description_zh, class: "form-control", rows: 5
 
   = render 'attachments/attachment_fields', f: f
   div id="demo"
@@ -61,4 +61,8 @@ css:
   #content * {
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
+  }
+
+  .form-control{
+    max-width: 500px;
   }

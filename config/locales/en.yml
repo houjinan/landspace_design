@@ -39,3 +39,8 @@ en:
     address: "Address"
     company_address: "The bund of Shanghai huangpu district in shandong 2 (no. 88 in SOHO f building)"
     contact_phone: "Get in touch"
+
+  service_case:
+    commercial_space: "commercial space"
+    living_space: "living space"
+    office_space: "office space"

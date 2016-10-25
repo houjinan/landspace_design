@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title LandspaceDesign Login
+    = csrf_meta_tags
+
+    = stylesheet_link_tag    'admin_layout', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'admin_layout', 'data-turbolinks-track': 'reload'
+    meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'
+
+  body class="contrast-green"
+    =render "admin/shared/header"
+    div id='wrapper'
+      =render "admin/shared/navbar"
+      section id='content' style="padding: 20px;"
+        - if flash[:notice]
+          .row
+            .col-lg-12
+              .alert.alert-info
+                button type="button" class="close" data-dismiss="alert" aria-label="Close"
+                  span == "&times;"
+                = notice
+
+        - if flash[:error]
+          .row
+            .col-lg-12
+              .alert.alert-danger
+                button type="button" class="close" data-dismiss="alert" aria-label="Close"
+                  span == "&times;"
+                = flash[:error]
+        = yield

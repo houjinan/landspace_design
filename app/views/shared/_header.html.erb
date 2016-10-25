@@ -24,9 +24,9 @@
             <li id="nav_service" ><a href="/site#service"><%=t("nav.service")%></a></li>
             <li id="nav_contact" ><a href="/site#contact"><%=t("nav.contact")%></a></li>
             <% if I18n.locale.to_s == "en" %>
-              <li><a href="<%=params[:action]%>?locale=zh-CN"><%=t("nav.language")%></a></li>
+              <li><a href="<%=request.path %>?locale=zh-CN"><%=t("nav.language")%></a></li>
             <% else %>
-              <li><a href="<%=params[:action]%>?locale=en"><%=t("nav.language")%></a></li>
+              <li><a href="<%=request.path %>?locale=en"><%=t("nav.language")%></a></li>
             <% end %>
           </ul>
         </nav>

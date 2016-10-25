@@ -1,0 +1,19 @@
+<div class="row">
+  <% if service_cases.present? %>
+    <% service_cases.each_with_index do |service_case, index|%>
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+        <a href="<%=service_case_path(service_case)%>" >
+          <div class="service-item">
+            <div class="tile">
+              <%=image_tag("services_plus.svg") %>
+              <div>
+                <p>0<%=index+1 %> /</p>
+                <h2><%=t("service_case.#{service_case.service_type}")%></h2>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    <%end%>
+  <%end%>
+</div>

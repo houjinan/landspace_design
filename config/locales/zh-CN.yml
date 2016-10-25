@@ -38,3 +38,8 @@ zh-CN:
     address: "地址"
     company_address: "中国 上海 黄浦区中山东二路88号（外滩SOHO f 栋）"
     contact_phone: "联系电话"
+
+  service_case:
+    commercial_space: "商业空间"
+    living_space: "居住空间"
+    office_space: "办公空间"

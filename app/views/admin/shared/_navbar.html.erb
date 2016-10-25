@@ -3,13 +3,13 @@
 <nav class='' id='main-nav'>
   <div class='navigation'>
     <ul class='nav nav-stacked'>
-      <li class='active'>
+      <li class='' id="dashboard">
         <a href='/admin/dashboard'>
           <i class='icon-dashboard'></i>
           <span>Dashboard</span>
         </a>
       </li>
-      <li class=''>
+      <li class='' id="service_cases">
         <a href='<%=admin_service_cases_path %>'>
           <i class='icon-folder-open-alt'></i>
           <span>服务案例</span>
@@ -51,3 +51,7 @@
     </ul>
   </div>
 </nav>
+
+<script>
+  $("#<%=controller_name%>").addClass("active");
+</script>
