@@ -22,6 +22,14 @@ gem 'http_accept_language'
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry'
+
+
+  gem 'capistrano', '~> 3.3.5'
+  gem 'capistrano-ext'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
+  gem 'capistrano-rails-console'
 end
 
 group :development do
