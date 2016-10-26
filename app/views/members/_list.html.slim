@@ -1,0 +1,16 @@
+.row.team
+  - members.each_with_index do |member, index|
+    .col-lg-2.col-md-2.col-sm-3.col-xs-4
+      =image_tag(member.head_avatar.url, onclick: "click_person(#{index+1})")
+
+.team-person
+  - members.each_with_index do |member, index|
+    .row style="display: none"
+      .col-lg-6.col-sm-6.col-xs-8
+        span = member.name
+      .col-lg-6.col-sm-6.col-xs-4
+        .pull-right
+          - if member.works_file.present?
+            = link_to t("site.representative"), member.works_file.url, target: "_blank"
+      .col-lg-12.col-sm-12.col-xs-12
+        pre = member.description
