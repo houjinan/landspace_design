@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :set_locale
+  before_action :load_web_config
   def set_locale
     I18n.locale = user_locale
     cookies[:locale] = params[:locale] if params[:locale]
@@ -21,5 +22,9 @@ class ApplicationController < ActionController::Base
 
     def http_head_locale
       http_accept_language.language_region_compatible_from(I18n.available_locales)
+    end
+
+    def load_web_config
+      @system_config ||= SystemConfiguration.where(configuration_type: "web_site_config").first
     end
 end

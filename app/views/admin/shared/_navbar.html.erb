@@ -21,22 +21,22 @@
           <span>团队成员</span>
         </a>
       </li>
-      <li class=''>
+      <li class='' id="system_configurations">
         <a class='dropdown-collapse' href='#'>
           <i class='icon-cog'></i>
           <span>系统设置</span>
           <i class='icon-angle-down angle-down'></i>
         </a>
         <ul class='nav nav-stacked'>
-          <li class=''>
-            <a href=''>
+          <li class='' id="web_site_config">
+            <a href='<%=web_site_config_admin_system_configurations_path %>'>
               <i class='icon-caret-right'></i>
               <span>网站配置</span>
             </a>
           </li>
 
-          <li class=''>
-            <a href=''>
+          <li class='' id="company_info_config">
+            <a href='<%=company_info_config_admin_system_configurations_path %>'>
               <i class='icon-caret-right'></i>
               <span>公司信息</span>
             </a>
@@ -49,4 +49,9 @@
 
 <script>
   $("#<%=controller_name%>").addClass("active");
+  if($("#<%=controller_name%>").children(".dropdown-collapse") != undefined){
+    $("#<%=controller_name%>").children(".dropdown-collapse").addClass("in");
+    $("#<%=controller_name%>").children(".nav").addClass("in");
+    $("#<%=action_name%>").addClass("active");
+  }
 </script>

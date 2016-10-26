@@ -1,0 +1,29 @@
+= form_for(@system_config, url: url_for(action: params[:action]), html: {method: :post, class: "horizontal_form", :multipart => true})  do |f|
+  .form-group
+    = label "system_configuration[parameters][name]", "网站名称:"
+    = text_field_tag "system_configuration[parameters][name]", @system_config.parameters[:name], class: "form-control"
+
+  .form-group
+    = label "system_configuration[parameters][domain_name]", "网站域名:"
+    = text_field_tag "system_configuration[parameters][domain_name]", @system_config.parameters[:domain_name], class: "form-control"
+
+  .form-group
+    = label "system_configuration[parameters][keys]", "网页关键字:"
+    = text_field_tag "system_configuration[parameters][keys]", @system_config.parameters[:keys], class: "form-control"
+
+  .form-group
+    = label "system_configuration[parameters][web_description]", "网站描述:"
+    = text_area_tag "system_configuration[parameters][web_description]", @system_config.parameters[:web_description], class: "form-control", rows: 5
+
+  .actions = f.submit "保存"
+
+
+css:
+  #content * {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+
+  .form-control{
+    max-width: 500px;
+  }

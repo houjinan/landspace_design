@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>LandspaceDesign</title>
+    <title><%= @system_config.present? ? @system_config.parameters[:name] : "WebSite"%></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'banner_index', 'data-turbolinks-track': 'reload' %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <% if  @system_config.present? %>
+      <meta name="keywords" content="<%=@system_config.parameters[:keys]%>">
+      <meta name="description" content="<%=@system_config.parameters[:web_description]%>">
+    <%end%>
   </head>
 
   <body style="background: #000">

@@ -14,7 +14,7 @@ html
       =render "admin/shared/navbar"
       section id='content' style="padding: 20px;"
         - if flash[:notice]
-          .row
+          .row-fuild
             .col-lg-12
               .alert.alert-info
                 button type="button" class="close" data-dismiss="alert" aria-label="Close"
@@ -22,7 +22,7 @@ html
                 = notice
 
         - if flash[:error]
-          .row
+          .row-fuild
             .col-lg-12
               .alert.alert-danger
                 button type="button" class="close" data-dismiss="alert" aria-label="Close"
