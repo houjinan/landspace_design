@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   devise_for :users, controllers: { sessions: 'sessions' }
   get 'home/index'
   get 'home/photo'
@@ -9,8 +10,10 @@ Rails.application.routes.draw do
   namespace :admin do
     get 'dashboard' => "dashboard#index", as: 'dashboard'
     resources :service_cases
+    resources :members
   end
 
 
   resources :service_cases
+  resources :members
 end

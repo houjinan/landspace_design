@@ -1,0 +1,39 @@
+- url = @member.new_record? ? admin_members_path : admin_member_path(@member)
+= form_for(@member, url: url, html:{class: "horizontal_form", :multipart => true}) do |f|
+
+  .form-group
+    = f.label :name_en, "英文姓名"
+    = f.text_field :name_en, class: "form-control"
+    div style="color: red"
+      = @member.errors.messages[:name_en].first rescue nil
+  .form-group
+    = f.label :name_zh, "中文姓名"
+    = f.text_field :name_zh, class: "form-control"
+    div style="color: red"
+      = @member.errors.messages[:name_zh].first rescue nil
+  .form-group
+    = f.label :description_en, "英文简介"
+    = f.text_area :description_en, class: "form-control", rows: 5
+  .form-group
+    = f.label :description_zh, "中文简介"
+    = f.text_area :description_zh, class: "form-control", rows: 5
+  .form-group
+    = f.label :head_avatar, "本人照片"
+    = f.file_field :head_avatar, class: "form-control"
+    div style="color: red"
+      = @member.errors.messages[:head_avatar].first rescue nil
+  .form-group
+    = f.label :works_file, "代表作"
+    = f.file_field :works_file, class: "form-control"
+    div style="color: red" 请上传pdf文件
+  .actions = f.submit
+
+css:
+  #content * {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+
+  .form-control{
+    max-width: 500px;
+  }
