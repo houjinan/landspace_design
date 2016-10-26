@@ -137,10 +137,10 @@
   }
 
 
-  var width=$(".bannerbox").width();
   var banner_index=-1;
   var timer=0;
   $(document).ready(function () {
+    clearInterval("move()");
     move();
     timer=setInterval("move()",5000);
     $(".bannerbox ul li").hover(function(){
