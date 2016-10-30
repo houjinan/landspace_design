@@ -10,7 +10,7 @@ html
     - if  @system_config.present?
       meta name="keywords" content="#{@system_config.parameters[:keys]}"
       meta name="description" content="#{@system_config.parameters[:web_description]}"
-  body style="background-color: #111; background-image: url('/assets/blueprints.svg'); background-size: cover;"
+  body style="background-color: #111; background-image: url(#{image_path('blueprints.svg')}); background-size: cover;"
     = render "shared/header"
     div style="width: 100%; height: 100%;"
       = yield

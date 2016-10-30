@@ -1,5 +1,5 @@
 
-@import url("font-awesome.min.css");
+@import url("#{asset_path('font-awesome.min.css')}");
 
 /*
 Escape Velocity by HTML5 UP
@@ -406,7 +406,7 @@ input[type="submit"].style3,
 input[type="reset"].style3,
 button.style3,
 .button.style3 {
-background: #2f333b url("overlay.png");
+background: #2f333b url("#{image_path('overlay.png')}");
 color: #fff;
 }
 
@@ -480,7 +480,7 @@ ol.default {
 	position: relative;
 	display: inline-block;
 	color: #fff;
-	background: #2f333b url("overlay.png");
+	background: #2f333b url("#{image_path('overlay.png')}");
 	border-radius: 1em;
 	text-align: center;
 }
@@ -549,13 +549,13 @@ ol.default {
 }
 
 .wrapper.style1 {
-	background: #e97770 url("overlay.png");
+	background: #e97770 url("#{image_path('overlay.png')}");
 	color: #eee;
 	color: rgba(255, 255, 255, 0.75);
 }
 
 .wrapper.style1 .title {
-	background: #e97770 url("overlay.png");
+	background: #e97770 url("#{image_path('overlay.png')}");
 	color: #fff;
 }
 
@@ -573,11 +573,11 @@ ol.default {
 	}
 
 .wrapper.style3 {
-	background: #f3f3f3 url("overlay.png");
+	background: #f3f3f3 url("#{image_path('overlay.png')}");
 }
 
 .wrapper.style3 .title {
-	background: #f3f3f3 url("overlay.png");
+	background: #f3f3f3 url("#{image_path('overlay.png')}");
 	color: #484d55;
 }
 
@@ -592,7 +592,7 @@ ol.default {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: url("overlay.png");
+	background: url("#{image_path('overlay.png')}");
 }
 
 /* Logo */

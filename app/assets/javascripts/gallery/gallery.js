@@ -66,12 +66,14 @@ $(function() {
 			init			= function() {
 
 				// (not necessary) preloading the images here...
-				$items.add('<img src="../assets/ajax-loader.gif"/><img src="../assets/black.png"/>').imagesLoaded( function() {
+				$items.add('<img src="#{image_path(\'ajax-loader.gif\')}"/><img src="#{image_path(\'black.png\')}"/>').imagesLoaded( function() {
 					// add options
 					_addViewModes();
 
 					// add large image wrapper
-					_addImageWrapper();
+					if($('#img-wrapper-tmpl').html() != undefined){
+						_addImageWrapper();
+				  }
 
 					// show first image
 					_showImage( $items.eq( current ) );

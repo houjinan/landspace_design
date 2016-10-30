@@ -21,23 +21,23 @@
   top: 0;
 }
 .bannerbox ul li.fst-li{
-  background: url("01.jpg") center no-repeat;
+  background: url("#{image_path('01.jpg')}") center no-repeat;
   background-size: cover;
 }
 .bannerbox ul li.sec-li{
-  background: url("02.jpg") center no-repeat;
+  background: url("#{image_path('02.jpg')}") center no-repeat;
   background-size: cover;
 }
 .bannerbox ul li.third-li{
-  background: url("03.jpg") center no-repeat;
+  background: url("#{image_path('03.jpg')}") center no-repeat;
   background-size: cover;
 }
 .bannerbox ul li.fourth-li{
-  background: url("04.jpg") center no-repeat;
+  background: url("#{image_path('04.jpg')}") center no-repeat;
   background-size: cover;
 }
 .bannerbox ul li.fifth-li{
-  background: url("05.jpg") center no-repeat;
+  background: url("#{image_path('05.jpg')}") center no-repeat;
   background-size: cover;
 }
 

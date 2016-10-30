@@ -277,7 +277,7 @@
   }
 
   .dropotron {
-    background: #222835 url("overlay.png");
+    background: #222835 url("#{image_path('overlay.png')}");
     background-color: rgba(44, 50, 63, 0.925);
     padding: 1.25em 1em 1.25em 1em;
     border-radius: 0.35em;
@@ -357,7 +357,7 @@
   .bg-wapper {
     width: 100%;
     height: 100%;
-    background: url('bg.png') no-repeat center center / cover;
+    background: url("#{image_path('bg.png')}") no-repeat center center / cover;
   }
 
   .content-wapper {
@@ -383,14 +383,14 @@
   }
 
   .en {
-    background: url('btn_en.png') no-repeat 0 0;
+    background: url("#{image_path('btn_en.png')}") no-repeat 0 0;
   }
 
   .en:hover {
   }
 
   .zh {
-    background: url('btn_zh.png') no-repeat 0 0;
+    background: url("#{image_path('btn_zh.png')}") no-repeat 0 0;
   }
 
   .zh:hover {
@@ -703,7 +703,7 @@
       top: 0;
       width: 275px;
       z-index: 10002;
-      background: #434446 url("overlay.png");
+      background: #434446 url("#{image_path('overlay.png')}");
       box-shadow: inset -3px 0px 4px 0px rgba(0, 0, 0, 0.1);
     }
 
@@ -879,7 +879,7 @@
   .bg-wapper {
     width: 100%;
     height: 100%;
-    background: url('bg_mobile.png') no-repeat center center / cover;
+    background: url("#{image_path('bg_mobile.png')}") no-repeat center center / cover;
   }
 
   .content-wapper {
@@ -906,14 +906,14 @@
   }
 
   .en {
-    background: url('btn_en.png') no-repeat 0 0;
+    background: url("#{image_path('btn_en.png')}") no-repeat 0 0;
   }
 
   .en:hover {
   }
 
   .zh {
-    background: url('btn_zh.png') no-repeat 0 0;
+    background: url("#{image_path('btn_zh.png')}") no-repeat 0 0;
   }
 
   .zh:hover {
