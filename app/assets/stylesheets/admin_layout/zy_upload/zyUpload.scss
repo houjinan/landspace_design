@@ -38,7 +38,7 @@ pre{font-family:'simsun';}
 
 
 .andArea{
-	background: url("../../zy_upload/add_img.png") no-repeat scroll center 5px rgba(0, 0, 0, 0);
+	background: url("#{image_path('zy_upload/add_img.png')}") no-repeat scroll center 5px rgba(0, 0, 0, 0);
     border: 1px dashed #E6E6E6;
     color: #CCCCCC;
     font-size: 18px;
@@ -208,7 +208,7 @@ pre{font-family:'simsun';}
 	height:40px;
 	left:0px;
 	right:0px;
-	background: url("../../zy_upload/success.png") no-repeat scroll right bottom transparent;
+	background: url("#{image_path('zy_upload/success.png')}") no-repeat scroll right bottom transparent;
 }
 .file_name{
 	margin:0px;
@@ -220,7 +220,7 @@ pre{font-family:'simsun';}
     float: left;
 }
 .file_edit{
-	background: url("../../zy_upload/edit_white.png") no-repeat scroll 0 0 transparent;
+	background: url("#{image_path('zy_upload/edit_white.png')}") no-repeat scroll 0 0 transparent;
 	width:18px;
 	height:18px;
 	display: inline;
@@ -230,10 +230,10 @@ pre{font-family:'simsun';}
 	margin-top:4px;
 }
 .file_edit:hover{
-	background: url("../../zy_upload/edit_blue.png") no-repeat scroll 0 0 transparent;
+	background: url("#{image_path('zy_upload/edit_blue.png')}") no-repeat scroll 0 0 transparent;
 }
 .file_del{
-	background: url("../../zy_upload/delete_white.png") no-repeat scroll 0 0 transparent;
+	background: url("#{image_path('zy_upload/delete_white.png')}") no-repeat scroll 0 0 transparent;
 	width:18px;
 	height:18px;
 	display: inline;
@@ -243,7 +243,7 @@ pre{font-family:'simsun';}
 	margin-top:4px;
 }
 .file_del:hover{
-	background: url("../../zy_upload/delete_blue.png") no-repeat scroll 0 0 transparent;
+	background: url("#{image_path('zy_upload/delete_blue.png')}") no-repeat scroll 0 0 transparent;
 }
 
 /* 设置图片等比例缩放 并且垂直居中*/
@@ -254,7 +254,7 @@ pre{font-family:'simsun';}
     text-align: center;
     vertical-align: middle;
     border: 1px solid #DFDFDF;
-    background: url("../../zy_upload/bg.png") no-repeat scroll center 0px transparent;
+    background: url("#{image_path('zy_upload/bg.png')}") no-repeat scroll center 0px transparent;
 }
 .upload_append_list img {
 	border: solid 1px #66f;
