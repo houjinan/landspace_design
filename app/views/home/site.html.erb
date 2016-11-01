@@ -129,5 +129,6 @@
     $(".team").children().eq(parseInt(index-1)).addClass("active");
     $(".team-person").children().eq(parseInt(index-1)).fadeIn(0).animate({"paddingLeft":"50px",opacity:1},1000);
   }
-  click_person(1);
+  $(".team").children().eq(parseInt(0)).addClass("active");
+  // click_person(1);
 </script>

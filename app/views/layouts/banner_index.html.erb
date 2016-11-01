@@ -153,6 +153,7 @@
       timer=setInterval("move()",5000);
     })
     $('.nav dl dd').click(function(){
+      clearInterval(timer);
       var ddIndex=$(this).index()-1;
       banner_index=ddIndex;
       move();
