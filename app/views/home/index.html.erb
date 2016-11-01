@@ -9,6 +9,7 @@
 </script>
 <div class="bg-wapper">
   <div class="content-wapper">
+
     <div class="introduction">
       <hr>
       <p class="remark">Come Design and build with us,Just in</p>
@@ -18,6 +19,12 @@
       <a href="javascript: window.localStorage.lang = 'en'; location.href='/site?locale=en';" class="language-link btn-lang en" xml:lang="en"></a>
       <a href="javascript: window.localStorage.lang = 'zh'; location.href='/site?locale=zh-CN';" class="language-link btn-lang zh" xml:lang="zh-hans"></a>
     </div>
+  </div>
+
+  <div class="sky">
+    <div class="clouds_one"></div>
+    <div class="clouds_two"></div>
+    <div class="clouds_three"></div>
   </div>
 </div>
 
@@ -32,4 +39,143 @@
   #titleBar, #header-nav {
     display: none;
   }
+
+
+  .sky {
+  height: 480px;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.clouds_one {
+  background: url("<%=image_path('cloud_one.png')%>");
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_one 100s linear infinite;
+  -moz-animation: cloud_one 100s linear infinite;
+  -o-animation: cloud_one 100s linear infinite;
+  animation: cloud_one 100s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.clouds_two {
+  background: url("<%=image_path('cloud_two.png')%>");
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_two 150s linear infinite;
+  -moz-animation: cloud_two 150s linear infinite;
+  -o-animation: cloud_two 150s linear infinite;
+  animation: cloud_two 150s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.clouds_three {
+  background: url("<%=image_path('cloud_three.png')%>");
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_three 200s linear infinite;
+  -moz-animation: cloud_three 200s linear infinite;
+  -o-animation: cloud_three 200s linear infinite;
+  animation: cloud_three 200s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+
+@-webkit-keyframes cloud_one {
+  0% {
+  left: 0
+  }
+  100% {
+  left: -200%
+  }
+}
+@-moz-keyframes cloud_one {
+  0% {
+  left: 0
+  }
+  100% {
+  left: -200%
+  }
+}
+@keyframes cloud_one {
+  0% {
+  left: 0
+  }
+  100% {
+  left: -200%
+  }
+}
+
+@-webkit-keyframes cloud_two {
+  0% {
+  left: 0
+  }
+  100% {
+  left: -200%
+  }
+}
+@-moz-keyframes cloud_two {
+  0% {
+  left: 0
+  }
+  100% {
+  left: -200%
+  }
+}
+@keyframes cloud_two {
+  0% {
+  left: 0
+  }
+  100% {
+  left: -200%
+  }
+}
+
+@-webkit-keyframes cloud_three {
+  0% {
+  left: 0
+  }
+  100% {
+  left: -200%
+  }
+}
+@-moz-keyframes cloud_three {
+  0% {
+  left: 0
+  }
+  100% {
+  left: -200%
+  }
+}
+@keyframes cloud_three {
+  0% {
+  left: 0
+  }
+  100% {
+  left: -200%
+  }
+}
 </style>
