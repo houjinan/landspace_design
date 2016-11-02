@@ -17,12 +17,12 @@
         <nav id="nav" class="pull-right">
           <ul>
             <li id="nav_index" class="active">
-              <a href="/site#header-wrapper"><%=t("nav.index")%></a>
+              <a href='<%= controller_name == "home" && action_name == "site" ? "javascript:void(0)" : "/site#header-wrapper" %>' title="header-wrapper"><%=t("nav.index")%></a>
             </li>
-            <li id="nav_about" ><a href="/site#about"><%=t("nav.about")%></a></li>
-            <li id="nav_brand" ><a href="/site#brand"><%=t("nav.brand")%></a></li>
-            <li id="nav_service" ><a href="/site#service"><%=t("nav.service")%></a></li>
-            <li id="nav_contact" ><a href="/site#contact"><%=t("nav.contact")%></a></li>
+            <li id="nav_about" ><a href='<%= controller_name == "home" && action_name == "site" ? "javascript:void(0)" : "/site#about" %>' title="about"><%=t("nav.about")%></a></li>
+            <li id="nav_brand" ><a href='<%= controller_name == "home" && action_name == "site" ? "javascript:void(0)" : "/site#brand" %>' title="brand"><%=t("nav.brand")%></a></li>
+            <li id="nav_service" ><a href='<%= controller_name == "home" && action_name == "site" ? "javascript:void(0)" : "/site#service" %>' title="service"><%=t("nav.service")%></a></li>
+            <li id="nav_contact" ><a href='<%= controller_name == "home" && action_name == "site" ? "javascript:void(0)" : "/site#contact" %>' title="contact"><%=t("nav.contact")%></a></li>
             <% if I18n.locale.to_s == "en" %>
               <li><a href="<%=request.path %>?locale=zh-CN"><%=t("nav.language")%></a></li>
             <% else %>

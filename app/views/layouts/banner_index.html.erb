@@ -153,7 +153,6 @@
       timer=setInterval("move()",5000);
     })
     $('.nav dl dd').click(function(){
-      clearInterval(timer);
       var ddIndex=$(this).index()-1;
       banner_index=ddIndex;
       move();
@@ -177,5 +176,12 @@
       });
     }
   }
+  jQuery(document).ready(function($) {
+    $("#nav li a").click(function(event) {
+      var index=this.title
+      var id='#'+index
+      $("html,body").animate({scrollTop: $(id).offset().top}, 1000);
+     });
+   });
 
 </script>

@@ -15,6 +15,7 @@
 			var	$this = $(this),
 				indent = Math.max(0, $this.parents('li').length - 1),
 				href = $this.attr('href'),
+				title = $this.attr('title'),
 				target = $this.attr('target');
 
 			if(href != "/site"){
@@ -22,7 +23,7 @@
 					'<a ' +
 						'class="link depth-' + indent + '"' +
 						( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
-						( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+						( (typeof title !== 'undefined' && title != '') ? ' href="/site#' + title + '"' : 'href="'+href+'"') +
 					'>' +
 						'<span class="indent-' + indent + '"></span>' +
 						$this.text() +
