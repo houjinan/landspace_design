@@ -10,7 +10,7 @@ require 'capistrano/rails/assets'
 require 'capistrano/console'
 require 'capistrano/rails/console'
 require 'pry'
-#require 'capistrano/rails/migrations'
+require 'capistrano/rails/migrations'
 
 require 'erb'
 
