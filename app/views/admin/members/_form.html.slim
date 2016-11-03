@@ -18,6 +18,11 @@
     = f.label :description_zh, "中文简介"
     = f.text_area :description_zh, class: "form-control", rows: 5
   .form-group
+    = f.label :seqence, "顺序号"
+    = f.number_field :seqence, class: "form-control"
+    div style="color: red"
+      = @member.errors.messages[:seqence].first rescue nil
+  .form-group
     = f.label :head_avatar, "本人照片"
     = f.file_field :head_avatar, class: "form-control"
     div style="color: red"

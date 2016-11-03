@@ -15,7 +15,11 @@
   .form-group
     = f.label :description_zh, "简介_英文"
     = f.text_area :description_zh, class: "form-control", rows: 5
-
+  .form-group
+    = f.label :seqence, "顺序号"
+    = f.number_field :seqence, class: "form-control"
+    div style="color: red"
+      = @service_case.errors.messages[:seqence].first rescue nil
   = render 'attachments/attachment_fields', f: f
   div id="demo"
   .actions = f.submit

@@ -3,7 +3,7 @@ module Admin
     before_action :set_member, only: [:show, :edit, :update, :destroy]
 
     def index
-      @members = Member.all.paginate(:per_page => 20, :page => params[:page])
+      @members = Member.all.order("seqence desc").paginate(:per_page => 20, :page => params[:page])
     end
 
     def show
@@ -51,7 +51,7 @@ module Admin
       end
 
       def member_params
-        params.require(:member).permit(:name_en, :name_zh, :description_en, :description_zh, :head_avatar, :works_file)
+        params.require(:member).permit(:name_en, :name_zh, :description_en, :description_zh, :head_avatar, :works_file, :seqence)
       end
   end
 end

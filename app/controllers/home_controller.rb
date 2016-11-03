@@ -5,8 +5,8 @@ class HomeController < ApplicationController
 
 
   def site
-    @service_cases = ServiceCase.all.limit(6)
-    @members = Member.all.limit(6)
+    @service_cases = ServiceCase.all.order("seqence desc").limit(3)
+    @members = Member.all.order("seqence desc")
     render "site", layout: "banner_index"
   end
 end

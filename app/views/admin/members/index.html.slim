@@ -9,6 +9,7 @@ table.table.table-bordered.table-hover.table-striped
       th 本人照片
       th 人员姓名
       th 代表作
+      th 顺序号
       th
 
   tbody
@@ -19,6 +20,7 @@ table.table.table-bordered.table-hover.table-striped
           =image_tag(member.head_avatar.url, class: "member_head_img")
         td = member.name_zh
         td = member.works_file.url
+        td = member.try(:seqence).to_i
         td
           = link_to '详情', admin_member_path(member), class: "btn btn-small btn-default"
           = link_to '编辑', edit_admin_member_path(member), class: "btn btn-small btn-primary"
