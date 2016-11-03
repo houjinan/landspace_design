@@ -146,11 +146,11 @@
   $(document).ready(function () {
     clearInterval("move()");
     move();
-    timer=setInterval("move()",5000);
+    // timer=setInterval("move()",5000);
     $(".bannerbox ul li").hover(function(){
       clearInterval(timer);
     },function(){
-      timer=setInterval("move()",5000);
+      // timer=setInterval("move()",5000);
     })
     $('.nav dl dd').click(function(){
       var ddIndex=$(this).index()-1;

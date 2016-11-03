@@ -946,4 +946,9 @@
     color: #fff;
     text-align: center;
   }
+
+  .bannerbox ul li.fst-li{
+    background: url("#{image_path('mobile_01.jpg')}") center no-repeat;
+    background-size: contain;
+  }
 }
