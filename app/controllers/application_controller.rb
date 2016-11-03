@@ -25,7 +25,8 @@ class ApplicationController < ActionController::Base
     end
 
     def load_web_config
+      return if session['web_site_config'].present?
       system_configs =  SystemConfiguration.where(configuration_type: "web_site_config")
-      @system_config ||= system_configs.first if system_configs.present?
+      session['web_site_config'] = system_configs.first.parameters if system_configs.present?
     end
 end
