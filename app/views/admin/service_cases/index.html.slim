@@ -10,6 +10,7 @@ table.table.table-bordered.table-hover.table-striped
       th 标题
       th 简介
       th 顺序号
+      th 图片个数
       th
 
   tbody
@@ -20,6 +21,7 @@ table.table.table-bordered.table-hover.table-striped
         td = service_case.title_zh
         td = service_case.description_zh
         td = service_case.try(:seqence).to_i
+        td = service_case.attachments.size
         td
           = link_to '详情', admin_service_case_path(service_case), class: "btn btn-small btn-default"
           = link_to '编辑', edit_admin_service_case_path(service_case), class: "btn btn-small btn-primary"

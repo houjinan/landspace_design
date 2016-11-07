@@ -3,7 +3,7 @@ module Admin
     before_action :set_service_case, only: [:show, :edit, :update, :destroy]
 
     def index
-      @service_cases = ServiceCase.all.order("seqence desc").paginate(:per_page => 20, :page => params[:page])
+      @service_cases = ServiceCase.all.includes(:attachments).order("seqence desc").paginate(:per_page => 20, :page => params[:page])
     end
 
     def show
