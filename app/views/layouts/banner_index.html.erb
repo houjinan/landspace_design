@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= session['web_site_config'].present? ? session['web_site_config'][:name] : "WebSite"%></title>
+    <title><%= session['web_site_config'].present? ? session['web_site_config']['name'] : "WebSite"%></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'banner_index', 'data-turbolinks-track': 'reload' %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <% if  @system_config.present? %>
-      <meta name="keywords" content="<%=session['web_site_config'][:keys]%>">
-      <meta name="description" content="<%=session['web_site_config'][:web_description]%>">
+    <% if session['web_site_config'].present? %>
+      <meta name="keywords" content="<%=session['web_site_config']['keys']%>">
+      <meta name="description" content="<%=session['web_site_config']['web_description']%>">
     <%end%>
   </head>
 
@@ -90,6 +90,24 @@
   </body>
 </html>
 <script>
+
+
+  // $(window).resize(function() {
+  //   var window_height = $(window).height();
+  //   if(window_height > 700 ){
+  //     $(".bannerbox").height(window_height);
+  //     $(".bannerbox li").height(window_height);
+  //   }else{
+  //     $(".bannerbox").height(700);
+  //   }
+  // });
+  // var window_height = $(window).height();
+  // if(window_height > 700 ){
+  //   $(".bannerbox").height(window_height);
+  //   $(".bannerbox li").height(window_height);
+  // }else{
+  //   $(".bannerbox").height(700);
+  // }
 
   window.onscroll=function(){
     //变量t就是滚动条滚动时，到顶部的距离
