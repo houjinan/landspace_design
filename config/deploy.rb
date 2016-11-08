@@ -6,7 +6,8 @@ set :default_stage, "production"
 
 
 set :application, 'landspace_design'
-set :repo_url, 'git@github.com:houjinan/landspace_design.git'
+set :repo_url, 'https://xxx:xxx@github.com/houjinan/landspace_design.git'
+# set :repo_url, 'git@github.com:houjinan/landspace_design.git'
 
 set :rails_env, 'production'
 
