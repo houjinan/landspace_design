@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong Title zh:
+  = @news_trend.title_zh
+p
+  strong Title en:
+  = @news_trend.title_en
+p
+  strong Content zh:
+  = @news_trend.content_zh
+p
+  strong Content en:
+  = @news_trend.content_en
+p
+  strong Scan count:
+  = @news_trend.scan_count
+
+= link_to 'Edit', edit_news_trend_path(@news_trend)
+'|
+= link_to 'Back', news_trends_path

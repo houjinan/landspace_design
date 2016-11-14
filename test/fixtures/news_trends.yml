@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title_zh: MyString
+  title_en: MyString
+  content_zh: MyText
+  content_en: MyText
+  scan_count: 1
+
+two:
+  title_zh: MyString
+  title_en: MyString
+  content_zh: MyText
+  content_en: MyText
+  scan_count: 1

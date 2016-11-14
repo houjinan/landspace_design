@@ -1,0 +1,29 @@
+h1 Listing news_trends
+
+table
+  thead
+    tr
+      th Title zh
+      th Title en
+      th Content zh
+      th Content en
+      th Scan count
+      th
+      th
+      th
+
+  tbody
+    - @news_trends.each do |news_trend|
+      tr
+        td = news_trend.title_zh
+        td = news_trend.title_en
+        td = news_trend.content_zh
+        td = news_trend.content_en
+        td = news_trend.scan_count
+        td = link_to 'Show', news_trend
+        td = link_to 'Edit', edit_news_trend_path(news_trend)
+        td = link_to 'Destroy', news_trend, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New News trend', new_news_trend_path

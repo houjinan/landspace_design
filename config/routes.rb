@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   devise_for :users, controllers: { sessions: 'sessions' }
   get 'home/index'
   get 'home/photo'
@@ -20,9 +21,12 @@ Rails.application.routes.draw do
         post :company_info_config
       end
     end
+
+    resources :news_trends
   end
 
 
   resources :service_cases
   resources :members
+  resources :news_trends
 end
