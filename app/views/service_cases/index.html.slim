@@ -1,0 +1,10 @@
+.container.service_cases
+  .row
+    - @service_cases.each do |service_case|
+      .col-lg-4.col-md-4.col-sm-6.col-xs-12
+        a href=service_case_path(service_case)
+          .service_case_item style="background-image: url(#{service_case.try(:attachments).try(:first).try(:avatar).present? ? image_path(service_case.attachments.first.avatar.url) : ''})"
+            .title
+              = service_case.title.length > 8 ? service_case.title[0..8] + "..." : service_case.title
+
+

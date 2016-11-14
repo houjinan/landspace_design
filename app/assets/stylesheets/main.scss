@@ -919,3 +919,34 @@ ol.default {
   padding-left: 0px;
   padding-right: 0px;
 }
+
+.service_cases {
+  padding-top: 80px;
+  a {
+    text-decoration: none;
+  }
+
+  a :hover {
+    opacity: 1;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+  .service_case_item {
+    margin-bottom: 20px;
+    height: 250px;
+    max-height: 350px;
+    background: #fff;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    .title {
+      padding-top: 100px;
+      padding-left: 20px;
+      font-size: 26px;
+      color: #000;
+    }
+  }
+}

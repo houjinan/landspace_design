@@ -4,17 +4,17 @@
     = f.label :service_type, "服务类型:"
     = f.select :service_type, ServiceCase::ServiceCategory, {include_blank: false }, class: "form-control"
   .form-group
-    = f.label :title_en, "标题_中文"
-    = f.text_field :title_en, class: "form-control"
-  .form-group
-    = f.label :title_zh, "标题_英文"
+    = f.label :title_zh, "标题_中文"
     = f.text_field :title_zh, class: "form-control"
   .form-group
-    = f.label :description_en, "简介_中文"
-    = f.text_area :description_en, class: "form-control", rows: 5
+    = f.label :title_en, "标题_英文"
+    = f.text_field :title_en, class: "form-control"
   .form-group
-    = f.label :description_zh, "简介_英文"
+    = f.label :description_zh, "简介_中文"
     = f.text_area :description_zh, class: "form-control", rows: 5
+  .form-group
+    = f.label :description_en, "简介_英文"
+    = f.text_area :description_en, class: "form-control", rows: 5
   .form-group
     = f.label :seqence, "顺序号"
     = f.number_field :seqence, class: "form-control"

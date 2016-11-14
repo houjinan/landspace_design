@@ -22,6 +22,7 @@ gem 'http_accept_language'
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry'
+  gem 'rb-readline'
 
 
   gem 'capistrano', '~> 3.3.5'

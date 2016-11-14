@@ -10,4 +10,14 @@ class ServiceCase < ApplicationRecord
   def service_category_name
     ServiceCategory.select{|k, v| v == self.service_type}.keys.join("")
   end
+
+
+  def title
+    case I18n.locale.to_s.downcase
+    when "en"
+      self.title_en
+    else
+      self.title_zh
+    end
+  end
 end
