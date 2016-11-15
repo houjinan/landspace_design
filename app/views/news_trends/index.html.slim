@@ -2,18 +2,43 @@
   .row
     - @news_trends.each_with_index do |news_trend, index|
       .col-lg-12.col-md-12.col-sm-12.col-xs-12
-        .news_trend_item
-          a href=news_trend_path(news_trend) target="_top"
+        a href=news_trend_path(news_trend) target="_top"
+          .news_trend_item
             .title = news_trend.title
             .wapper
               .pull-left
-                span = "发表于 &nbsp;&nbsp; #{news_trend.created_at.strftime('%F %R:%S')}".html_safe
+                span = "#{t('news_trend.posted_in')} &nbsp;&nbsp; #{news_trend.created_at.strftime('%F %R:%S')}".html_safe
               .pull-right
                 = image_tag("visited_count.png", class: "visited_count")
                 span = "#{news_trend.try(:scan_count).to_i}"
             .cover_image style="background-image: url(#{news_trend.try(:cover_image).try(:url) ? image_path(news_trend.try(:cover_image).try(:url)) : ''})"
             pre
               = news_trend.content.length > 45 ? news_trend.content[0..45] + "..." : news_trend.content
-              = " 查看全文>"
+              = "   "
+              = t('news_trend.view_all')
+              = " >"
         - if index < (@news_trends.count - 1)
           hr
+  .pull-right = will_paginate @news_trends
+
+css:
+  .pagination > li > a, .pagination > .disabled > a {
+    background-color: #333;
+    border: 1px solid #444;
+    color: #ddd;
+  }
+  .pagination > li > a:hover, .pagination > .disabled > a:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: #444;
+    border-color: #555;
+  }
+  .pagination > .active > a {
+    background-color: #555;
+    border-color: #666;
+  }
+
+  .pagination > .active > a:hover {
+    background-color: #666;
+    border-color: #777;
+  }

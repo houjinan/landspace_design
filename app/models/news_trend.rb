@@ -22,4 +22,9 @@ class NewsTrend < ApplicationRecord
       self.content_zh
     end
   end
+
+
+  def scaned
+    update(scan_count: self.scan_count.to_i+1)
+  end
 end

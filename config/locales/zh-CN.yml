@@ -48,3 +48,7 @@ zh-CN:
     commercial_space: "商业空间"
     living_space: "居住空间"
     office_space: "办公空间"
+
+  news_trend:
+    posted_in: "发表于 "
+    view_all: " 查看全文"

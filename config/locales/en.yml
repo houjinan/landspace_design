@@ -47,3 +47,7 @@ en:
     commercial_space: "commercial space"
     living_space: "living space"
     office_space: "office space"
+
+  news_trend:
+    posted_in: "posted in "
+    view_all: " view all"

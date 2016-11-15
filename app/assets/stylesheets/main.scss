@@ -962,8 +962,11 @@ ol.default {
 
   a:hover {
     text-decoration: none;
+    opacity: 1;
   }
-
+  a :hover {
+    opacity: 1;
+  }
   .news_trend_item {
     padding-top: 15px;
     padding-bottom: 10px;
@@ -993,6 +996,10 @@ ol.default {
     border-top: 1px solid #979797;
   }
 
+  .active {
+    opacity: 1;
+  }
+
   .cover_image {
     background-repeat: no-repeat;
     background-size: cover;
@@ -1012,3 +1019,4 @@ ol.default {
   }
 
 }
+
