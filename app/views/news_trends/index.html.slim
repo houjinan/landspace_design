@@ -3,7 +3,7 @@
     - @news_trends.each_with_index do |news_trend, index|
       .col-lg-12.col-md-12.col-sm-12.col-xs-12
         .news_trend_item
-          a href=news_trend_path(news_trend)
+          a href=news_trend_path(news_trend) target="_top"
             .title = news_trend.title
             .wapper
               .pull-left
