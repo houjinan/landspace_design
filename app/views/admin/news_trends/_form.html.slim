@@ -13,6 +13,9 @@
     = f.label :content_en, "内容_英文"
     = f.text_area :content_en, class: "form-control", rows: 5
   .form-group
+    = f.label :is_published, "是否发布"
+    = f.check_box :is_published, class: "form-control"
+  .form-group
     = f.label :cover_image, "封面图片"
     = f.file_field :cover_image, class: "form-control"
     div style="color: red"

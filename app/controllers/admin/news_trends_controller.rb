@@ -45,7 +45,7 @@ module Admin
       end
 
       def news_trend_params
-        params.require(:news_trend).permit(:title_zh, :title_en, :content_zh, :content_en, :cover_image, :scan_count)
+        params.require(:news_trend).permit(:title_zh, :title_en, :content_zh, :content_en, :cover_image, :scan_count, :is_published)
       end
   end
 end

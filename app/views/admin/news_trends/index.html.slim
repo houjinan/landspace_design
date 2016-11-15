@@ -8,6 +8,7 @@ table.table.table-bordered.table-hover.table-striped
       th 编号
       th 标题
       th 创建时间
+      th 发布状态
       th 浏览次数
       th
 
@@ -17,6 +18,7 @@ table.table.table-bordered.table-hover.table-striped
         td = news_trend.id
         td = news_trend.title_zh
         td = news_trend.created_at.strftime("%F %R")
+        td = news_trend.is_published ? "已经发布" : "未发布"
         td = news_trend.scan_count
         td
           = link_to '详情', admin_news_trend_path(news_trend), class: "btn btn-small btn-default"
