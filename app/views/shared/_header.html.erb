@@ -22,6 +22,7 @@
             <li id="nav_about" ><a href='<%= controller_name == "home" && action_name == "site" ? "javascript:void(0)" : "/site#about" %>' title="about"><%=t("nav.about")%></a></li>
             <li id="nav_brand" ><a href='<%= controller_name == "home" && action_name == "site" ? "javascript:void(0)" : "/site#brand" %>' title="brand"><%=t("nav.brand")%></a></li>
             <li id="nav_service" ><a href='<%= controller_name == "home" && action_name == "site" ? "javascript:void(0)" : "/site#service" %>' title="service"><%=t("nav.service")%></a></li>
+            <li id="nav_news_trend" ><a href='/news_trends'><%=t("nav.news_trend")%></a></li>
             <li id="nav_contact" ><a href='<%= controller_name == "home" && action_name == "site" ? "javascript:void(0)" : "/site#contact" %>' title="contact"><%=t("nav.contact")%></a></li>
             <% if I18n.locale.to_s == "en" %>
               <li><a href="<%=request.path %>?locale=zh-CN"><%=t("nav.language")%></a></li>

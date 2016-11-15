@@ -1,29 +1,19 @@
-h1 Listing news_trends
-
-table
-  thead
-    tr
-      th Title zh
-      th Title en
-      th Content zh
-      th Content en
-      th Scan count
-      th
-      th
-      th
-
-  tbody
-    - @news_trends.each do |news_trend|
-      tr
-        td = news_trend.title_zh
-        td = news_trend.title_en
-        td = news_trend.content_zh
-        td = news_trend.content_en
-        td = news_trend.scan_count
-        td = link_to 'Show', news_trend
-        td = link_to 'Edit', edit_news_trend_path(news_trend)
-        td = link_to 'Destroy', news_trend, data: { confirm: 'Are you sure?' }, method: :delete
-
-br
-
-= link_to 'New News trend', new_news_trend_path
+.container.news_trends
+  .row
+    - @news_trends.each_with_index do |news_trend, index|
+      .col-lg-12.col-md-12.col-sm-12.col-xs-12
+        .news_trend_item
+          a href=news_trend_path(news_trend)
+            .title = news_trend.title
+            .wapper
+              .pull-left
+                span = "发表于 &nbsp;&nbsp; #{news_trend.created_at.strftime('%F %R:%S')}".html_safe
+              .pull-right
+                = image_tag("visited_count.png", class: "visited_count")
+                span = "#{news_trend.try(:scan_count).to_i}"
+            .cover_image style="background-image: url(#{news_trend.try(:cover_image).try(:url) ? image_path(news_trend.try(:cover_image).try(:url)) : ''})"
+            pre
+              = news_trend.content.length > 45 ? news_trend.content[0..45] + "..." : news_trend.content
+              = " 查看全文>"
+        - if index < (@news_trends.count - 1)
+          hr

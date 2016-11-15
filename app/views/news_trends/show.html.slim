@@ -1,21 +1,14 @@
-p#notice = notice
-
-p
-  strong Title zh:
-  = @news_trend.title_zh
-p
-  strong Title en:
-  = @news_trend.title_en
-p
-  strong Content zh:
-  = @news_trend.content_zh
-p
-  strong Content en:
-  = @news_trend.content_en
-p
-  strong Scan count:
-  = @news_trend.scan_count
-
-= link_to 'Edit', edit_news_trend_path(@news_trend)
-'|
-= link_to 'Back', news_trends_path
+.container.news_trends style="height: 100%;"
+  .row
+    .col-lg-12.col-md-12.col-sm-12.col-xs-12
+      .news_trend_item
+        .title = @news_trend.title
+        .wapper
+          .pull-left
+            span = "发表于 &nbsp;&nbsp; #{@news_trend.created_at.strftime('%F %R:%S')}".html_safe
+          .pull-right
+            = image_tag("visited_count.png", class: "visited_count")
+            span = "#{@news_trend.try(:scan_count).to_i}"
+        .cover_image style="background-image: url(#{@news_trend.try(:cover_image).try(:url) ? image_path(@news_trend.try(:cover_image).try(:url)) : ''})"
+        pre
+          = @news_trend.content

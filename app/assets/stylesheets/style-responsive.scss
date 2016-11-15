@@ -423,6 +423,11 @@
     text-align: center;
   }
 
+  .news_trends{
+    .cover_image {
+      height: 300px;
+    }
+  }
 }
 
 /* Tablet Only */
@@ -470,6 +475,11 @@
     font-size: 1.75em;
   }
 
+  .news_trends{
+    .cover_image {
+      height: 200px;
+    }
+  }
 }
 
 /* Mobile Only */
@@ -950,5 +960,10 @@
   .bannerbox ul li.fst-li{
     background: url("#{image_path('mobile_01.jpg')}") center no-repeat;
     background-size: contain;
+  }
+  .news_trends {
+    .cover_image {
+      height: 142px;
+    }
   }
 }

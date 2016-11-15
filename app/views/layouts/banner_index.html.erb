@@ -113,7 +113,7 @@
     //变量t就是滚动条滚动时，到顶部的距离
     var t =document.documentElement.scrollTop || document.body.scrollTop;
     var header_nav = $("#header-nav");
-    var scroll_distance = $("#header-wrapper").height() - header_nav.height()
+    var scroll_distance = $("#header-wrapper").height() - header_nav.height();
     if(t >= scroll_distance && header_nav.css("position")=="static"){
       header_nav.css("position", "fixed");
       header_nav.css("margin-top", "0px");

@@ -950,3 +950,68 @@ ol.default {
     }
   }
 }
+
+.news_trends {
+  margin-top: 80px;
+  .row {
+    background-color: #4A4A4A;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .news_trend_item {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+
+    .title {
+      font-size: 18px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .wapper {
+      margin-bottom: 40px;
+    }
+    .visited_count {
+      margin-right: 12px;
+    }
+    span {
+      color: #979797;
+      font-size: 12px;
+    }
+  }
+
+  hr {
+    border-top: 1px solid #979797;
+  }
+
+  .cover_image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  pre {
+    background-color: transparent;
+    border: 0px;
+    border-radius: 0px;
+    font-size: 14px;
+    color: #fff;
+    white-space: pre-wrap;
+    padding: 0px;
+    margin-top: 10px;
+    line-height: 20px;
+  }
+
+  .detail {
+    padding-left: 10px;
+    color: #A04151;
+  }
+}
