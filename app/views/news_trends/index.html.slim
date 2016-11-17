@@ -13,7 +13,7 @@
                 span = "#{news_trend.try(:scan_count).to_i}"
             .cover_image style="background-image: url(#{news_trend.try(:cover_image).try(:url) ? image_path(news_trend.try(:cover_image).try(:url)) : ''})"
             pre
-              = news_trend.content.length > 45 ? news_trend.content[0..45] + "..." : news_trend.content
+              = news_trend.phrase.length > 45 ? news_trend.phrase[0..45] + "..." : news_trend.phrase
               = "   "
               = t('news_trend.view_all')
               = " >"

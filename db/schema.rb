@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161115065940) do
+ActiveRecord::Schema.define(version: 20161117025106) do
 
   create_table "attachments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "avatar"
@@ -42,6 +42,8 @@ ActiveRecord::Schema.define(version: 20161115065940) do
     t.datetime "created_at",                                 null: false
     t.datetime "updated_at",                                 null: false
     t.boolean  "is_published",               default: false
+    t.text     "phrase_zh",    limit: 65535
+    t.text     "phrase_en",    limit: 65535
   end
 
   create_table "service_cases", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

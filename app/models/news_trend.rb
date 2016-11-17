@@ -7,12 +7,20 @@ class NewsTrend < ApplicationRecord
   def title
     case I18n.locale.to_s.downcase
     when "en"
-      self.title_en
+      self.title_en.to_s
     else
-      self.title_zh
+      self.title_zh.to_s
     end
   end
 
+  def phrase
+    case I18n.locale.to_s.downcase
+    when "en"
+      self.phrase_en.to_s
+    else
+      self.phrase_zh.to_s
+    end
+  end
 
   def content
     case I18n.locale.to_s.downcase

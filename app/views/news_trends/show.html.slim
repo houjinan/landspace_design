@@ -10,5 +10,4 @@
             = image_tag("visited_count.png", class: "visited_count")
             span = "#{@news_trend.try(:scan_count).to_i}"
         .cover_image style="background-image: url(#{@news_trend.try(:cover_image).try(:url) ? image_path(@news_trend.try(:cover_image).try(:url)) : ''})"
-        pre
-          = @news_trend.content
+        pre = @news_trend.content.html_safe

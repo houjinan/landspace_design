@@ -7,11 +7,17 @@
     = f.label :title_en, "标题_英文"
     = f.text_field :title_en, class: "form-control"
   .form-group
+    = f.label :phrase_zh, "简介_中文"
+    = f.text_area :phrase_zh, class: "form-control", rows: 3
+  .form-group
+    = f.label :phrase_en, "简介_英文"
+    = f.text_area :phrase_en, class: "form-control", rows: 3
+  .form-group
     = f.label :content_zh, "内容_中文"
-    = f.text_area :content_zh, class: "form-control", rows: 5
+    = f.text_area :content_zh, class: "tinymce"
   .form-group
     = f.label :content_en, "内容_英文"
-    = f.text_area :content_en, class: "form-control", rows: 5
+    = f.text_area :content_en, class: "tinymce"
   .form-group
     = f.label :is_published, "是否发布"
     = f.check_box :is_published, class: "form-control"
@@ -32,3 +38,4 @@ css:
   .form-control{
     max-width: 500px;
   }
+
