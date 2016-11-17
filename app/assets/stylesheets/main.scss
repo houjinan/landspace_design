@@ -945,8 +945,10 @@ ol.default {
     .title {
       padding-top: 100px;
       padding-left: 20px;
-      font-size: 26px;
+      font-size: 20px;
       color: #000;
+      position: absolute;
+      bottom: 40px;
     }
   }
 }
