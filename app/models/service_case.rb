@@ -20,4 +20,13 @@ class ServiceCase < ApplicationRecord
       self.title_zh
     end
   end
+
+  def description
+    case I18n.locale.to_s.downcase
+    when "en"
+      self.description_en
+    else
+      self.description_zh
+    end
+  end
 end

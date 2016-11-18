@@ -1023,3 +1023,102 @@ ol.default {
 
 }
 
+
+.service_case {
+  margin-top: 60px;
+  margin-bottom: 20px;
+
+  .item {
+    height: 677px;
+    background: #fff;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  img {
+
+  }
+
+  .carousel-indicators {
+    margin-left: 0%;
+    position: relative;
+    left: 0%;
+    width: 100%;
+    bottom: -10px;
+    opacity: 0.5;
+    background: rgb(0, 0, 0);
+  }
+
+  .carousel-indicators > li{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    text-indent: 1px;
+    border: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    margin: 10px 5px;
+
+
+    // div {
+    //   width: 25px;
+    //   height: 25px;
+    //   background-color: #888;
+    //   border-radius: 15px;
+    //   opacity: 0.5;
+    // }
+  }
+
+  .carousel-indicators > .active{
+    padding-top: 2px;
+    color: #A04151;
+    font-size: 18px;
+  }
+
+  .case_left {
+    margin-top: 20px;
+  }
+
+  .case_right {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: -15px;
+    background-color: #4A4A4A;
+    height: 677px;
+    margin-top: 20px;
+  }
+
+  .case_type {
+    color: #CDCDCD;
+    font-size: 14px;
+  }
+
+  .case_title {
+    color: #A04151;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .case_time {
+    color: #CDCDCD;
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+
+  pre {
+    background-color: transparent;
+    border: 0px;
+    border-radius: 0px;
+    font-size: 15px;
+    color: #fff;
+    white-space: pre-wrap;
+    padding: 0px;
+    margin-top: 10px;
+    line-height: 28px;
+    height: 500px;
+  }
+}

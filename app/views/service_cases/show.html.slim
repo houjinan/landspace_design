@@ -1,0 +1,22 @@
+.container.service_case
+  .row
+    .col-lg-8.col-md-12.col-sm-12.col-xs-12.case_left
+      div id="carousel-example-generic" class="carousel slide" data-ride="carousel"
+        div.pull-right style="bottom: 0px; position: absolute; width: 100%;"
+          ol class="carousel-indicators"
+            - @service_case.attachments.each_with_index do |attachment, index|
+              li data-target="#carousel-example-generic" data-slide-to="#{index}" class="#{index==0 ? 'active' : ''}"
+                div = index+1
+
+
+        div class="carousel-inner" role="listbox"
+          - @service_case.attachments.each_with_index do |attachment, index|
+            div class="item #{index==0 ? 'active' : ''}" valign="center" style="background-image: url('#{attachment.avatar.url}')"
+              div class="carousel-caption"
+
+    .col-lg-4.col-md-12.col-sm-12.col-xs-12.case_right
+      .case_type = @service_case.service_category_name
+      .case_title = @service_case.title
+      .case_time = @service_case.created_at.strftime("%d / %m / %Y")
+
+      pre = @service_case.description

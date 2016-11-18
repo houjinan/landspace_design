@@ -488,6 +488,25 @@
   display: none;
 }
 
+
+@media screen and (max-width: 1199px) {
+  .service_case {
+    .item {
+      height: 300px;
+    }
+
+    .case_right {
+      margin-left: 0px;
+      height: auto;
+      background-color: transparent;
+    }
+
+    pre {
+      height: auto;
+    }
+  }
+}
+
 @media screen and (max-width: 736px) {
 
   /* Basic */

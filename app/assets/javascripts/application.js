@@ -21,4 +21,3 @@
 //= require util
 //= require main
 
-//= require_directory ./gallery
