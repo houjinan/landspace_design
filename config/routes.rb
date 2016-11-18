@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     get 'dashboard' => "dashboard#index", as: 'dashboard'
     resources :service_cases
     resources :members
-
+    resources :attachments
     resources :system_configurations do
       collection do
         get :web_site_config
