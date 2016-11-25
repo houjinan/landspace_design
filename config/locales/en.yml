@@ -4,16 +4,16 @@ en:
     next_label: "后一页"
 
   home_header:
-    banner-1-1: "LAND SPACE DESIGN CHINA"
-    banner-1-2: "LAND SPACE DESIGN CHINA"
-    banner-2-1: "CHINA'S NEW SPACE ECOSYSTEM"
-    banner-2-2: "CHINA'S NEW SPACE ECOSYSTEM"
-    banner-3-1: "DESIGN TO DEFINE LIFE"
-    banner-3-2: "DESIGN TO DEFINE LIFE"
-    banner-4-1: "International Custom of Soft Outfit"
-    banner-4-2: "International Custom of Soft Outfit"
-    banner-5-1: "Renovation Plan of China’s Rural Home"
-    banner-5-2: "Renovation Plan of China’s Rural Home"
+    banner-1-1: "Land Space Design China"
+    banner-1-2: "Land Space Design China"
+    banner-2-1: "Chinese New Space Ecosystem"
+    banner-2-2: "Chinese New Space Ecosystem"
+    banner-3-1: "Design to Define Life"
+    banner-3-2: "Design to Define Life"
+    banner-4-1: "International Custom of “FFE”"
+    banner-4-2: "International Custom of “FFE”"
+    banner-5-1: "SUZAO. Renovation Plan of Chinese Rural Home"
+    banner-5-2: "SUZAO. Renovation Plan of Chinese Rural Home"
 
   nav:
     index: "Home"
@@ -25,9 +25,9 @@ en:
     language: "中文"
 
   site:
-    company-introduce: "LAND (SHANGHAI) SPACE DESIGN LIMITED COMPANY, USED TO BE LANDDESIGN STUDIO, THE CHINA' HEADQUARTER IS LOCATED IN SHANGHAI, AND CONCENTRATES ON INTERNATIONAL CUSTOM OF SOFT OUTFIT. LAND CHINA'S CROSS-BORDER CUSTOMIZATION PLATFORM HAS ACHIEVED LINEAR DOCKING OF ITALY OR OTHER EUROPEAN WELL-KNOWN HOUSEHOLD CUSTOM MANUFACTURERS AND CHINESE MAINLAND, AND PROVIDED SOFT OUTFIT CUSTOM SERVICE WITH HIGH QUALITY AND TOTAL SYSTEM BY RELYING ON PROFESSIONAL DESIGN TEAM. THE 16-YEAR COMPANY HAS FOUNDED \"SUZAO\" BRAND TO SERVE THE CONSTRUCTION OF CHINA'S RURAL HOME. WITH THE SUBJECTS OF HUMAN, NATURE AND LIFE, LANDSPACE DEVOTES ITSELF TO CREATE THE ECOLOGICAL SYSTEM OF NEW SPACE DESIGN."
+    company-introduce: "land space design ltd, originally called land design studio, based on shanghai in china, concentrates on international \"ffe\" customized service. the cross-border customization platform in china provides the superior serves on system-wide interior design by relaying on its advantage of contacting directly with well-known european customized furniture manufactures and professional design team. the \"suzao\" brand is found to serve chinese rural b&b since landspace has been setted up this year. it has committed itself on a new space ecosystem embracing the subject of human, nature and living. With the subjects of human, nature and life, LANDSPACE devotes itself to create the ecological system of new space design."
     representative: "Master Works"
-    about_us: "About"
+    about_us: "Concerning"
     brand: "Process"
     service: "Services"
     contact: "Contact"
@@ -40,7 +40,7 @@ en:
 
     company_name: "LAND SPACE DESIGN"
     address: "Address"
-    company_address: "The bund of Shanghai huangpu district in shandong 2 (no. 88 in SOHO f building)"
+    company_address: "The bund of Shanghai huangpu district in Zhongshan East Second Road (no. 88 in SOHO F building)"
     contact_phone: "Get in touch"
 
   service_case:
