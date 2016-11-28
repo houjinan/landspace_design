@@ -92,22 +92,22 @@
 <script>
 
 
-  // $(window).resize(function() {
-  //   var window_height = $(window).height();
-  //   if(window_height > 700 ){
-  //     $(".bannerbox").height(window_height);
-  //     $(".bannerbox li").height(window_height);
-  //   }else{
-  //     $(".bannerbox").height(700);
-  //   }
-  // });
-  // var window_height = $(window).height();
-  // if(window_height > 700 ){
-  //   $(".bannerbox").height(window_height);
-  //   $(".bannerbox li").height(window_height);
-  // }else{
-  //   $(".bannerbox").height(700);
-  // }
+  $(window).resize(function() {
+    var window_height = $(window).height();
+    if(window_height > 700 ){
+      $(".bannerbox").height(window_height);
+      $(".bannerbox li").height(window_height);
+    }else{
+      $(".bannerbox").height(700);
+    }
+  });
+  var window_height = $(window).height();
+  if(window_height > 700 ){
+    $(".bannerbox").height(window_height);
+    $(".bannerbox li").height(window_height);
+  }else{
+    $(".bannerbox").height(700);
+  }
 
   window.onscroll=function(){
     //变量t就是滚动条滚动时，到顶部的距离
