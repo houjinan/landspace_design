@@ -23,9 +23,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry'
   gem 'rb-readline'
-
-
-  gem 'capistrano', '~> 3.3.5'
+  gem 'capistrano', '~> 3.4.0'
   gem 'capistrano-ext'
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
