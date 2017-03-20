@@ -6,6 +6,15 @@
   }else {
 
   }
+
+  function change_location(language){
+    window.localStorage.lang = language;
+    if(language == "en"){
+      location.href='/site?locale=en';
+    }else if(language == "zh"){
+      location.href='/site?locale=zh-CN';
+    }
+  }
 </script>
 <div class="bg-wapper">
   <div class="sky">
@@ -21,8 +30,8 @@
       <p class="title">LAND SPACE DESIGN.</p>
     </div>
     <div class="which-lang">
-      <a href="javascript: window.localStorage.lang = 'en'; location.href='/site?locale=en';" class="language-link btn-lang en" xml:lang="en"></a>
-      <a href="javascript: window.localStorage.lang = 'zh'; location.href='/site?locale=zh-CN';" class="language-link btn-lang zh" xml:lang="zh-hans"></a>
+      <a href="" onclick="change_location('en')" class="language-link btn-lang en" xml:lang="en"></a>
+      <a href="" onclick="change_location('zh')" class="language-link btn-lang zh" xml:lang="zh-hans"></a>
     </div>
   </div>
 
